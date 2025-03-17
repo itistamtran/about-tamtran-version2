@@ -127,7 +127,7 @@ function App() {
 
   const updatePosition = () => {
         if (window.innerWidth < 768) {
-            setPosition({ top: "20%", left: "31%" }); // Mobile
+            setPosition({ top: "20%", left: "29%" }); // Mobile
         } else if (window.innerWidth < 1024) {
             setPosition({ top: "28%", left: "39%" }); // Tablet
         } else {
@@ -215,7 +215,7 @@ function App() {
                 whiteSpace: "nowrap",
                 zIndex: 999,
                 pointerEvents: "none",
-                textShadow: "0 1px 30px rgba(33, 172, 105, 0.8)",
+                textShadow: "0 1px 30px #FFB6C1",
               }}>
               tam tran
             </motion.div>
@@ -339,7 +339,7 @@ function App() {
           {/* About Me section: one side image, one side text */}
           <div style={{
             display: "flex",
-            flexDirection: window.innerWidth < 768 ? "column" : "row", // ✅ Stack on mobile
+            flexDirection: window.innerWidth < 768 ? "column" : "row", // Stack on mobile
             alignItems: "center",
             justifyContent: "center",
             backgroundColor: "black",
