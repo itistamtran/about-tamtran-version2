@@ -475,21 +475,21 @@ function App() {
                 }
               }
             `}</style>
-          </div>;
+          </div>
 
           <Testimonials /></>
           } /> 
 
-          {/* ✅ Projects Page Route */}
-          <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/forsale" element={<ForSale/>} />
           <Route path="/resume" element={<Resume/>} />
+          
+          <Route path="/projects" element={<Projects />} />
 
           <Route path="/projects/CPPlibrary" element={<CPPLibrary/>} />
           <Route path="/projects/OperationsResearch" element={<OperationsResearch/>} />
           <Route path="/projects/BrainTumorDetected" element={<BrainTumorDetected/>} />
-
+          
         </Routes>
         
         <Footer />    
