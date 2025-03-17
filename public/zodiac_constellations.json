@@ -1,0 +1,103 @@
+{
+    "Aries": {
+      "stars": [
+        { "name": "Hamal", "ra": 2.1196, "dec": 23.462, "mag": 2.0 },
+        { "name": "Sheratan", "ra": 1.9107, "dec": 20.809, "mag": 2.6 },
+        { "name": "Mesarthim", "ra": 1.9066, "dec": 19.729, "mag": 3.8 }
+      ],
+      "connections": [[0, 1], [1, 2]]
+    },
+  
+    "Taurus": {
+      "stars": [
+        { "name": "Aldebaran", "ra": 4.5987, "dec": 16.509, "mag": 0.9 },
+        { "name": "Elnath", "ra": 5.4382, "dec": 28.607, "mag": 1.7 },
+        { "name": "Hyadum I", "ra": 4.3299, "dec": 15.627, "mag": 3.6 }
+      ],
+      "connections": [[0, 1], [0, 2]]
+    },
+  
+    "Gemini": {
+      "stars": [
+        { "name": "Castor", "ra": 7.5767, "dec": 31.888, "mag": 1.6 },
+        { "name": "Pollux", "ra": 7.7553, "dec": 28.026, "mag": 1.1 },
+        { "name": "Wasat", "ra": 7.3366, "dec": 21.982, "mag": 3.5 }
+      ],
+      "connections": [[0, 1], [1, 2]]
+    },
+  
+    "Cancer": {
+      "stars": [
+        { "name": "Tegmine", "ra": 8.9748, "dec": 21.469, "mag": 4.3 },
+        { "name": "Acubens", "ra": 8.7448, "dec": 11.967, "mag": 4.2 }
+      ],
+      "connections": [[0, 1]]
+    },
+  
+    "Leo": {
+      "stars": [
+        { "name": "Regulus", "ra": 10.1395, "dec": 11.967, "mag": 1.4 },
+        { "name": "Denebola", "ra": 11.8177, "dec": 14.572, "mag": 2.1 },
+        { "name": "Algieba", "ra": 10.3328, "dec": 19.841, "mag": 2.6 }
+      ],
+      "connections": [[0, 1], [0, 2]]
+    },
+  
+    "Virgo": {
+      "stars": [
+        { "name": "Spica", "ra": 13.4199, "dec": -11.161, "mag": 1.0 },
+        { "name": "Vindemiatrix", "ra": 12.6311, "dec": 10.075, "mag": 2.8 }
+      ],
+      "connections": [[0, 1]]
+    },
+  
+    "Libra": {
+      "stars": [
+        { "name": "Zubeneschamali", "ra": 15.2834, "dec": -9.382, "mag": 2.6 },
+        { "name": "Zubenelgenubi", "ra": 14.8476, "dec": -16.041, "mag": 2.8 }
+      ],
+      "connections": [[0, 1]]
+    },
+  
+    "Scorpio": {
+      "stars": [
+        { "name": "Antares", "ra": 16.4901, "dec": -26.432, "mag": 1.1 },
+        { "name": "Shaula", "ra": 17.5601, "dec": -37.103, "mag": 1.6 },
+        { "name": "Dschubba", "ra": 16.0056, "dec": -22.621, "mag": 2.3 }
+      ],
+      "connections": [[0, 1], [0, 2]]
+    },
+  
+    "Sagittarius": {
+      "stars": [
+        { "name": "Kaus Australis", "ra": 18.4029, "dec": -34.384, "mag": 1.8 },
+        { "name": "Nunki", "ra": 18.9211, "dec": -26.296, "mag": 2.1 }
+      ],
+      "connections": [[0, 1]]
+    },
+  
+    "Capricorn": {
+      "stars": [
+        { "name": "Deneb Algedi", "ra": 21.7844, "dec": -16.127, "mag": 2.9 },
+        { "name": "Dabih", "ra": 21.3703, "dec": -14.565, "mag": 3.0 }
+      ],
+      "connections": [[0, 1]]
+    },
+  
+    "Aquarius": {
+      "stars": [
+        { "name": "Sadalsuud", "ra": 22.0964, "dec": -5.571, "mag": 2.9 },
+        { "name": "Sadalmelik", "ra": 22.0964, "dec": -0.319, "mag": 2.9 }
+      ],
+      "connections": [[0, 1]]
+    },
+  
+    "Pisces": {
+      "stars": [
+        { "name": "Alpherg", "ra": 1.1657, "dec": 7.892, "mag": 3.8 },
+        { "name": "Kullat Nunu", "ra": 0.2206, "dec": 6.035, "mag": 4.3 }
+      ],
+      "connections": [[0, 1]]
+    }
+  }
+  
