@@ -2,9 +2,8 @@ import React, { useState, useEffect } from "react";
 import SkyScene from "./components/SkyScene";
 import { Canvas } from "@react-three/fiber";  
 import { loadStarData, loadZodiacData } from "./utils/loadData"; 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
 import './styles/global.css';
 
 import TopBar from "./components/topbar";
@@ -69,11 +68,6 @@ const responsiveStyles = `
 }
 `;
 
-// Inject CSS into the document
-const styleTag = document.createElement("style");
-styleTag.innerHTML = responsiveStyles;
-document.head.appendChild(styleTag);
-
 const imageContainerStyle = {
   position: "relative",
   width: "100%", 
@@ -104,19 +98,6 @@ const overlayStyle = {
   fontWeight: "bold",
   transition: "0.3s ease-in-out",
 };
-
-//handle the text in the pink rectangle
-styleTag.innerHTML = `
-  @keyframes scrollText {
-    from {
-      transform: translateX(100%);
-    }
-    to {
-      transform: translateX(-100%);
-    }
-  }
-`;
-document.head.appendChild(styleTag);
 
 function App() {
   const [stars, setStars] = useState([]);
@@ -159,18 +140,17 @@ function App() {
       setConstellations(data);
     });
 
-    const styleTag = document.createElement("style");
-    styleTag.innerHTML = `
-      @keyframes scrollText {
-        from {
-          transform: translateX(100%);
-        }
-        to {
-          transform: translateX(-100%);
-        }
-      }
-    `;
-    document.head.appendChild(styleTag);
+    if (!document.querySelector("#scroll-text-style")) {
+      const styleTag = document.createElement("style");
+      styleTag.id = "scroll-text-style";  
+      styleTag.innerHTML = `
+          @keyframes scrollText {
+              from { transform: translateX(100%); }
+              to { transform: translateX(-100%); }
+          }
+      `;
+      document.head.appendChild(styleTag);
+    }
     // Run the position and height functions
     updatePosition();
     updateStarsHeight(); // Set initial height
@@ -194,7 +174,7 @@ function App() {
         <Routes>
           {/* Home Page */}
           <Route path="/" element={
-            <>
+            <div>
               {/* Star Background Section */}
             <div style={{ width: "100%", height: starsHeight, overflow: "auto", position: "relative", background: "black", display: "flex", justifyContent: "center", alignItems: "center"}}>
             {/* Centered Animated Text */}
@@ -477,7 +457,7 @@ function App() {
             `}</style>
           </div>
 
-          <Testimonials /></>
+          <Testimonials /></div>
           } /> 
 
           <Route path="/contact" element={<Contact />} />
@@ -485,13 +465,11 @@ function App() {
           <Route path="/resume" element={<Resume/>} />
           
           <Route path="/projects" element={<Projects />} />
-
           <Route path="/projects/CPPlibrary" element={<CPPLibrary/>} />
           <Route path="/projects/OperationsResearch" element={<OperationsResearch/>} />
           <Route path="/projects/BrainTumorDetected" element={<BrainTumorDetected/>} />
-          
-        </Routes>
-        
+
+        </Routes>      
         <Footer />    
       </div>
     </Router>

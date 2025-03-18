@@ -106,7 +106,7 @@ const Resume = () => {
                 alignItems: 'center',
             }}>                   
             {/* Download icon that triggers a download */}
-            <a href="/assets/images/resume.pdf" download="Resume_TamTran.pdf" style={{ color: 'white', textDecoration: 'none' }}>
+            <a href="/media/resume.pdf" download="Resume_TamTran.pdf" style={{ color: 'white', textDecoration: 'none' }}>
                 <FontAwesomeIcon icon={faDownload} style={{ color: 'white' }} />
             </a>
         </div>
