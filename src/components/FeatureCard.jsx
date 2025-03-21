@@ -62,9 +62,9 @@ const FeatureCard = ({ title, description, link, image, external }) => {
 
 // Card Styles
 const cardStyle = {
-  background: "rgb(67, 67, 67)", 
-  padding: "20px",
-  borderRadius: "12px",
+  background: "rgb(21, 21, 21)", 
+  padding: "10px",
+  borderRadius: "0px",
   textAlign: "center",
   transition: "0.3s ease-in-out",
   boxShadow: "0 4px 10px rgba(0, 0, 0, 0.8)",
@@ -79,7 +79,7 @@ const imageContainerStyle = {
 };
 const imageStyle = {
   width: "100%",
-  height: "180px",
+  height: "200px",
   objectFit: "cover",
   transition: "transform 0.3s ease-in-out",
 };

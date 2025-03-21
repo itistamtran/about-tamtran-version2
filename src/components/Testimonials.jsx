@@ -70,8 +70,8 @@ const Testimonials = () => {
         .testimonials-grid {
           display: grid;
           grid-template-columns: repeat(3, 1fr);
-          gap: 20px;
-          max-width: 1200px;
+          gap: 30px;
+          max-width: 1230px;
           margin: auto;
           padding: 20px;
         }
@@ -111,14 +111,14 @@ const styles = {
     color: "white",
   },
   card: {
-    background: "#dddddd",
+    background: "#3f3f3f",
     borderRadius: "12px",
     padding: "20px",
-    boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
+    boxShadow: "0px 4px 10px rgba(219, 16, 118, 0.5)",
     textAlign: "left",
   },
   highlightedCard: {
-    background: "#F8F8F8", 
+    background: "#595959", 
     padding: "20px",
   },
   profileContainer: {
@@ -134,26 +134,26 @@ const styles = {
     objectFit: "cover",
   },
   name: {
-    fontSize: "1.1rem",
+    fontSize: "1.2rem",
     fontWeight: "bold",
-    color: "black",
+    color: "white",
     marginBottom: "2px",
   },
   company: {
-    fontSize: "0.9rem",
-    color: "black",
+    fontSize: "1rem",
+    color: "#cccccc",
     fontWeight: "600",
     margin: 0,
   },
   role: {
-    fontSize: "0.9rem",
-    color: "black",
+    fontSize: "1rem",
+    color: "#cccccc",
     fontWeight: "300",
     margin: 0,
   },
   text: {
-    fontSize: "0.95rem",
-    color: "black",
+    fontSize: "1rem",
+    color: "#cccccc",
     fontWeight: "300",
   },
 };

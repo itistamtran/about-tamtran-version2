@@ -32,8 +32,8 @@ function isWebGLSupported() {
 const gridContainerStyle = {
   display: "grid",
   gridTemplateColumns: "repeat(4, 1fr)", 
-  gap: "10px",
-  padding: "20px",
+  gap: "30px",
+  padding: "40px",
   backgroundColor: "black",
   width: "100vw", 
   maxWidth: "100%",
@@ -269,25 +269,25 @@ function App() {
           <div style={gridContainerStyle}>
             {/* Image 1 */}
             <div style={imageContainerStyle}>
-              <img src="/media/analytical.jpg" alt="analytical" style={imageStyle} />
+              <img src="/media/grid-photo.jpg" alt="analytical" style={imageStyle} />
               <div style={overlayStyle}>analytical</div>
             </div>
 
             {/* Image 2 */}
             <div style={imageContainerStyle}>
-              <img src="/media/adaptable.jpg" alt="adaptable" style={imageStyle} />
+              <img src="/media/grid-photo.jpg" alt="adaptable" style={imageStyle} />
                <div style={overlayStyle}>adaptable</div>
             </div>
 
             {/* Image 3 */}
             <div style={imageContainerStyle}>
-              <img src="/media/innovative.jpg" alt="innovative" style={imageStyle} />
+              <img src="/media/grid-photo.jpg" alt="innovative" style={imageStyle} />
               <div style={overlayStyle}>innovative</div>
             </div>
 
             {/* Image 4 */}
             <div style={imageContainerStyle}>
-              <img src="/media/driven.jpg" alt="driven" style={imageStyle} />
+              <img src="/media/grid-photo.jpg" alt="driven" style={imageStyle} />
               <div style={overlayStyle}>driven</div>
             </div>
           </div>
@@ -319,7 +319,7 @@ function App() {
           {/* About Me section: one side image, one side text */}
           <div style={{
             display: "flex",
-            flexDirection: window.innerWidth < 768 ? "column" : "row", // Stack on mobile
+            flexDirection: window.innerWidth < 768 ? "column" : "row",
             alignItems: "center",
             justifyContent: "center",
             backgroundColor: "black",
@@ -328,8 +328,10 @@ function App() {
             paddingLeft: "30px",
             paddingRight: "30px",
             gap: "30px",
-            maxWidth: "100vw",
+            maxWidth: "1300px",
             overflow: "hidden",
+            margin: "auto",
+            textAlign: window.innerWidth < 768 ? "center" : "left",
             }}>
 
             {/* Left Side (Image) */}
@@ -417,7 +419,7 @@ function App() {
             {/* Features Section */}
             <div style={{maxWidth: "1200px", width: "90%", background: "#FFB6C1", margin: "auto", }}>
               {/* Features Title */}
-              <h2 className="features-title">FEATURE HIGHLIGHTS</h2>
+              <h2 className="features-title">Feature Highlights</h2>
               {/* Feature Cards Grid */}
               <div className="features-grid">
                 <FeatureCard title="Project" description="Check out my projects that showcase my problem-solving skills." link="/projects" image="/media/project.jpg" />
@@ -429,8 +431,8 @@ function App() {
             {/* Responsive Styling */}
             <style>{`
               .features-title {
-                fontSize: "clamp(7rem, 4vw, 7rem)";
-                font-weight: 700;
+                font-size: clamp(1.2rem, 4vw, 2rem);
+                font-weight: 800;
                 color: black;
                 margin-bottom: -5px;
                 margin-top: 10px;
@@ -441,8 +443,8 @@ function App() {
               .features-grid {
                 display: grid;
                 grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-                gap: 20px;
-                padding: 20px;
+                gap: 30px;
+                padding: 30px;
                 max-width: 1200px;
                 margin: auto;
               }
