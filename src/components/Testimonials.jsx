@@ -2,23 +2,33 @@ import React from "react";
 
 const testimonials = [
   {
-    name: "Professor's Name",
-    role: "Dr. Professor",
-    image: "/media/grid-photo.jpg",
-    text: "This is test",
+    name: "Scott Roby, PhD",
+    company: "Cypress College",
+    role: (
+      <> 
+        Professor of Mathematics <br />
+        Science, Engineering and Math Division
+      </>
+    ),    
+    image: "/media/scott-roby.jpg",
+    text: `My Calculus 2 class is focused on producing thorough and well-presented logical solutions to problems, 
+          and Tam excelled at this. Tam performed exceptionally well in the class and finished the semester with one of the top grades. 
+          My observations of Tam have shown a hard-working, talented, and well-rounded student with a lot of drive and potential.`,
   },
   {
     name: "Professor's Name",
-    role: "Dr. Professor",
+    company: "Cal Poly Pomona",
+    role: "Professor",
     image: "/media/grid-photo.jpg",
-    text: "This is test",
+    text: "Write something here",
     highlighted: true, 
   },
   {
     name: "Professor's Name",
-    role: "Dr. Professor",
+    company: "Cal Poly Pomona",
+    role: "Professor",
     image: "/media/grid-photo.jpg",
-    text: "This is test",
+    text: "Write somthing here",
   },
 ];
 
@@ -39,10 +49,17 @@ const Testimonials = () => {
               ...(testimonial.highlighted ? styles.highlightedCard : {}),
             }}
           >
-            {/* Profile Image */}
-            <img src={testimonial.image} alt={testimonial.name} style={styles.image} />
-            <h4 style={styles.name}>{testimonial.name}</h4>
-            <p style={styles.role}>{testimonial.role}</p>
+            {/* Profile Image + Name & Role Container */}
+            <div style={styles.profileContainer}>
+              <img src={testimonial.image} alt={testimonial.name} style={styles.image} />
+              <div>
+                <h4 style={styles.name}>{testimonial.name}</h4>
+                <p style={styles.company}>{testimonial.company}</p>
+                <p style={styles.role}>{testimonial.role}</p>
+              </div>
+            </div>
+
+            {/* Testimonial Text */}
             <p style={styles.text}>{testimonial.text}</p>
           </div>
         ))}
@@ -98,29 +115,41 @@ const styles = {
     borderRadius: "12px",
     padding: "20px",
     boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
-    textAlign: "center",
+    textAlign: "left",
   },
   highlightedCard: {
     background: "#F8F8F8", 
-    padding: "30px",
+    padding: "20px",
+  },
+  profileContainer: {
+    display: "flex",
+    alignItems: "center",
+    gap: "15px",
+    marginBottom: "10px",
   },
   image: {
     width: "60px",
     height: "60px",
     borderRadius: "50%", 
     objectFit: "cover",
-    marginBottom: "10px",
   },
   name: {
     fontSize: "1.1rem",
     fontWeight: "bold",
     color: "black",
+    marginBottom: "2px",
+  },
+  company: {
+    fontSize: "0.9rem",
+    color: "black",
+    fontWeight: "600",
+    margin: 0,
   },
   role: {
     fontSize: "0.9rem",
     color: "black",
-    marginBottom: "10px",
     fontWeight: "300",
+    margin: 0,
   },
   text: {
     fontSize: "0.95rem",
@@ -130,3 +159,4 @@ const styles = {
 };
 
 export default Testimonials;
+

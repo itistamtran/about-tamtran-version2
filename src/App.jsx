@@ -269,25 +269,25 @@ function App() {
           <div style={gridContainerStyle}>
             {/* Image 1 */}
             <div style={imageContainerStyle}>
-              <img src="/media/grid-photo.jpg" alt="analytical" style={imageStyle} />
+              <img src="/media/analytical.jpg" alt="analytical" style={imageStyle} />
               <div style={overlayStyle}>analytical</div>
             </div>
 
             {/* Image 2 */}
             <div style={imageContainerStyle}>
-              <img src="/media/grid-photo.jpg" alt="adaptable" style={imageStyle} />
+              <img src="/media/adaptable.jpg" alt="adaptable" style={imageStyle} />
                <div style={overlayStyle}>adaptable</div>
             </div>
 
             {/* Image 3 */}
             <div style={imageContainerStyle}>
-              <img src="/media/grid-photo.jpg" alt="innovative" style={imageStyle} />
+              <img src="/media/innovative.jpg" alt="innovative" style={imageStyle} />
               <div style={overlayStyle}>innovative</div>
             </div>
 
             {/* Image 4 */}
             <div style={imageContainerStyle}>
-              <img src="/media/grid-photo.jpg" alt="driven" style={imageStyle} />
+              <img src="/media/driven.jpg" alt="driven" style={imageStyle} />
               <div style={overlayStyle}>driven</div>
             </div>
           </div>
@@ -420,9 +420,9 @@ function App() {
               <h2 className="features-title">FEATURE HIGHLIGHTS</h2>
               {/* Feature Cards Grid */}
               <div className="features-grid">
-                <FeatureCard title="Project" description="Check out my projects that showcase my problem-solving skills." link="/projects" image="/media/grid-photo.jpg" />
-                <FeatureCard title="Experience" description="With hands-on experience, I apply my skills to deliver innovative solutions." link="/resume" image="/media/grid-photo.jpg" />
-                <FeatureCard title="For Sale" description="Explore the digital images I’ve created to find the perfect piece for your style." link="/forsale" image="/media/grid-photo.jpg" />
+                <FeatureCard title="Project" description="Check out my projects that showcase my problem-solving skills." link="/projects" image="/media/project.jpg" />
+                <FeatureCard title="Experience" description="With hands-on experience, I apply my skills to deliver innovative solutions." link="/resume" image="/media/experience.jpg" />
+                <FeatureCard title="For Sale" description="Explore the digital images I’ve created to find the perfect piece for your style." link="/forsale" image="/media/forsale-2.jpg" />
               </div>
             </div>
 

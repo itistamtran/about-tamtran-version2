@@ -106,7 +106,7 @@ const Resume = () => {
                 alignItems: 'center',
             }}>                   
             {/* Download icon that triggers a download */}
-            <a href="/media/resume.pdf" download="Resume_TamTran.pdf" style={{ color: 'white', textDecoration: 'none' }}>
+            <a href="/media/resume-tamtran.pdf" download="Resume_TamTran.pdf" style={{ color: 'white', textDecoration: 'none' }}>
                 <FontAwesomeIcon icon={faDownload} style={{ color: 'white' }} />
             </a>
         </div>
@@ -173,7 +173,7 @@ const Resume = () => {
                         <Typography variant="body1" gutterBottom component="div" style={{ fontSize: '1.25rem', lineHeight: '1.6', textAlign: 'left', color: '#F5F5F5' }}>
                             Bachelor of Science in Computer Science
                         </Typography>
-                        <Typography variant="body1" gutterBottom component="div" style={{ fontSize: '1.25rem', lineHeight: '1.6', textAlign: 'left', color: '#F5F5F5' }}>
+                        <Typography variant="body1" gutterBottom component="div" style={{ fontSize: '1.25rem', lineHeight: '1.6', textAlign: 'left', color: '#F5F5F5', marginTop: '-10px' }}>
                             Minors in Mathematics and Data Science
                         </Typography>
                         <div style={{ width: '100%', textAlign: 'left' }}>
@@ -327,7 +327,7 @@ const Resume = () => {
                     <li style={{ marginBottom: '8px' }}>
                         <Typography variant="body1" style={{ fontSize: '1.25rem', textAlign: 'left' }}>
                             <span style={{ marginRight: '10px' }}>&#9679;</span>
-                            Manage and update website content, styles, and layouts using Cascade CMS for multiple departmental sites, including the Digital Humanities Consortium, Ethics and Policy Center, and the Philosophy and Science Technology Society.
+                            Manage and update website content, styles, and layouts using Cascade CMS for multiple departmental sites, including the Digital Humanities Consortium, Ethics and Policy Center, Philosophy and Science Technology Society.
                         </Typography>
                     </li>
                     <li style={{ marginBottom: '8px' }}>

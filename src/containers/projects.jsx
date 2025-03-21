@@ -27,18 +27,24 @@ const projects = [
 
 export default function ProjectsPage() {
     return (
-        <div className="min-h-screen flex flex-col items-center justify-center w-full bg-[black] p-12">
-            {/* Title */}
-            <h1 className="mb-10 text-4xl font-bold text-center text-white">My Projects</h1>
+<div className="relative min-h-screen flex flex-col items-center justify-start w-full bg-[black] pt-6 sm:pt-4">
+{/* Title */}
+<h1 className="text-4xl font-bold text-center text-white w-full mt-15 sm:mt-15 mb-10">
+    My Projects
+</h1>
+
+
+
+
             
             {/* Project Cards Grid */}
             <div className="grid w-full max-w-6xl grid-cols-1 gap-12 px-4 mx-auto sm:grid-cols-2 md:grid-cols-3">
                 {projects.map((project, index) => (
                     <Link to={project.link} key={project.id} className="relative block transition duration-300 transform hover:scale-105">
                         <div 
-                            className={`bg-[#121212] rounded-xl p-6 w-[350px] h-[460px] transition duration-300 
+                            className={`bg-[#121212] rounded-xl p-6 w-[370px] h-[440px] transition duration-300 
                                 hover:shadow-[0px_0px_30px_rgba(0,255,128,0.5)] 
-                                transform rotate-[3deg] hover:rotate-0`} 
+                                transform rotate-[3deg] hover:rotate-0 md:w-[320px] md:h-[400px] sm:w-[250px] sm:h-[360px]`}
                             style={{
                                 transformOrigin: "center",
                                 boxShadow: "0px 10px 30px rgba(255, 182, 193, 0.6)",
@@ -46,7 +52,7 @@ export default function ProjectsPage() {
                             }}
                         >
                             {/* Image */}
-                            <div className="overflow-hidden rounded-md w-full h-[220px]">
+                            <div className="overflow-hidden rounded-md w-full h-[200px]">
                                 <img 
                                     src={project.imageUrl} 
                                     alt={project.title} 
@@ -55,12 +61,13 @@ export default function ProjectsPage() {
                             </div>
 
                             {/* Title */}
-                            <h2 className="mt-4 text-xl font-extrabold text-[#FFB6C1] text-center">{project.title}</h2>
-                            
+                            <h2 className="mt-4 text-lg font-extrabold text-[#FFB6C1] text-center md:text-base sm:text-sm">
+                                {project.title}
+                            </h2>                            
                             {/* Tags */}
                             <div className="flex flex-wrap justify-center gap-2 mt-3">
                                 {project.tags.map((tag, index) => (
-                                    <span key={index} className="px-3 py-1 text-sm font-semibold text-black bg-[#FFB6C1] rounded-md shadow-md">
+                                    <span key={index} className="px-2 py-1 text-xs font-semibold text-black bg-[#FFB6C1] rounded-md shadow-md md:text-xs sm:text-[10px]">
                                         {tag}
                                     </span>
                                 ))}

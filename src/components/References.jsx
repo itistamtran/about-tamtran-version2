@@ -17,20 +17,22 @@ const References = () => {
               variant="h6"
               className="font-semibold text-white" style={{ marginLeft: '20px', textAlign: 'left' }}
             >
-              Dr. Scott Roby
+              Dr. Alex Madva
             </Typography>
             <Typography
               variant="body1"
               className="text-white" style={{ marginLeft: '20px', textAlign: 'left' }}
             >
-              Professor of Mathematics
+              Associate Professor, Department of Philosophy <br />
+              Director, California Center for Ethics & Policy <br />
+              Co-Director, Digital Humanities Consortium
+
             </Typography>
             <Typography
               variant="body1"
               className="text-white" style={{ marginLeft: '20px', textAlign: 'left' }}
             >
-              Science, Engineering, Mathematics Division <br />
-              Cypress College
+              Cal Poly Pomona
             </Typography>
             <div className="flex items-center mt-2" style={{ marginLeft: '20px' }}>
               <FontAwesomeIcon icon={faPhone} className="mr-2 text-[#FFB6C1]" />
@@ -38,7 +40,7 @@ const References = () => {
                 variant="body2"
                 className="text-white"
               >
-                (714) 484-7000, ext. 48637
+                (909) 869-3847
               </Typography>
             </div>
             <div className="flex items-center mt-2" style={{ marginLeft: '20px' }}>
@@ -47,7 +49,7 @@ const References = () => {
                 variant="body2"
                 className="text-white"
               >
-                sroby@cypresscollege.edu
+                ammadva@cpp.edu
               </Typography>
             </div>
           </Grid>
@@ -58,21 +60,21 @@ const References = () => {
               variant="h6"
               className="font-semibold text-white" style={{ marginLeft: '20px', textAlign: 'left' }}
             >
-              Vinh Nguyen
+              Dr. Scott Roby
             </Typography>
             <Typography
               variant="body1"
               className="text-white" style={{ marginLeft: '20px', textAlign: 'left' }}
             >
-              Founder
-            </Typography>
-            <Typography
-              variant="body1"
-              className="text-white" style={{ marginLeft: '20px', textAlign: 'left' }}
-            >
-              Vietmedia TV
+              Professor of Mathematics            
               <br />
-              Broadcasting & Media Production Company
+              Science, Engineering, Mathematics Division
+            </Typography>
+            <Typography
+              variant="body1"
+              className="text-white" style={{ marginLeft: '20px', textAlign: 'left' }}
+            >
+              Cypress College
             </Typography>
             <div className="flex items-center mt-2">
               <FontAwesomeIcon icon={faPhone} className="mr-2 text-[#FFB6C1]" style={{ marginLeft: '20px' }}/>
@@ -80,7 +82,7 @@ const References = () => {
                 variant="body2"
                 className="text-white"
               >
-                (661) 623-9999
+                (714) 484-7000, ext. 48637
               </Typography>
             </div>
             <div className="flex items-center mt-2">
@@ -89,7 +91,7 @@ const References = () => {
                 variant="body2"
                 className="text-white" 
               >
-                Vietmediatv57.14@gmail.com
+                sroby@cypresscollege.edu
               </Typography>
             </div>
           </Grid>
