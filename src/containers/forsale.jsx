@@ -53,13 +53,13 @@ const products = [
 
 export default function OnSalePage() {
     return (
-        <div className="flex flex-col items-center w-full min-h-screen p-6 text-white bg-black">
-            <h1 className="w-full h-full mb-6 text-3xl font-bold mt-15">For Sale</h1>
-            <p className="mb-6 font-bold text-gray-200">Explore my collection of images available for sale on Shutterstock.</p>
+        <div className="flex flex-col items-center w-full min-h-screen p-6  bg-black light:bg-white">
+            <h1 className="w-full h-full mb-6 text-3xl font-bold mt-15 text-white light:text-black">For Sale</h1>
+            <p className="mb-6 font-bold text-gray-200 light:text-black">Explore my collection of images available for sale on Shutterstock.</p>
             
-            <div className="grid w-full max-w-full grid-cols-1 gap-6 px-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+            <div className="grid w-full max-w-full grid-cols-1 gap-6 px-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ">
                 {products.map((product) => (
-                    <div key={product.id} className="overflow-hidden bg-gray-800 rounded-lg shadow-md">
+                    <div key={product.id} className="overflow-hidden rounded-lg transition-transform transform hover:scale-105  bg-gray-800 light:text-white">
                         <img 
                             src={product.imageUrl} 
                             alt={product.title} 

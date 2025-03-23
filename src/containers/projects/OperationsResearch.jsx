@@ -134,12 +134,10 @@ const latexContentModify3 = `
 \\]
 `;
 
-
 const OperationsResearch = () => {
   return (
     <Container maxWidth="lg">
       <ThemeProvider theme={theme}>
-
 
         {/* Title */}
         <Typography variant="h3" component="h1" gutterBottom style={{ marginTop: '4rem', fontWeight: 800, fontFamily: 'Montserrat, sans-serif', textAlign: 'left' }}>
@@ -174,7 +172,7 @@ const OperationsResearch = () => {
 
         {/* Contribution Container */}
         <ContributionContainer className="flex flex-col lg:flex-row">
-          <TextSection className="flex-1">
+          <TextSection className="flex-1 light:text-black">
             <Typography style={{ fontWeight: 700, textAlign: 'left' }}>
               Contribution to Emergency Nursing Practice
             </Typography>

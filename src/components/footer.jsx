@@ -4,22 +4,25 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const FooterWrapper = styled(Box)`
-  width: 100%;
+  width: 100vw;
   background-color: black;
   color: white;
   text-align: center;
   overflow: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 `;
 
 /* Video Container */
 const VideoContainer = styled(Box)`
-  width: 100%;
+  width: 100vw;
   position: relative;
   overflow: hidden;
 `;
 
 const Video = styled.video`
-  width: 100%;
+  width: 100vw;
   max-height: 300px; 
   object-fit: cover;
 `;

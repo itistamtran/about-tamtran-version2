@@ -24,8 +24,6 @@ const theme = createTheme({
   }
 });
 
-
-
 const StyledLink = styled(Link)`
   text-decoration: none;
   color: white;
@@ -44,7 +42,7 @@ const Resume = () => {
       <ThemeProvider theme={theme}>
         {/* Video container */}
         <div className="relative w-full h-[60vh] overflow-hidden">
-            <video className="absolute top-0 left-0 object-cover w-full h-full" autoPlay loop muted>
+            <video className="absolute top-0 left-0 object-cover w-full h-full" autoPlay loop muted playsInline>
                 <source src="/media/Relaxing-coding.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
@@ -170,10 +168,10 @@ const Resume = () => {
                                 -- Expected December 2025
                             </Typography>
                         </div>
-                        <Typography variant="body1" gutterBottom component="div" style={{ fontSize: '1.25rem', lineHeight: '1.6', textAlign: 'left', color: '#F5F5F5' }}>
+                        <Typography variant="body1" gutterBottom component="div" style={{ fontSize: '1.25rem', lineHeight: '1.6', textAlign: 'left', color: "var(--text-color)" }}>
                             Bachelor of Science in Computer Science
                         </Typography>
-                        <Typography variant="body1" gutterBottom component="div" style={{ fontSize: '1.25rem', lineHeight: '1.6', textAlign: 'left', color: '#F5F5F5', marginTop: '-10px' }}>
+                        <Typography variant="body1" gutterBottom component="div" style={{ fontSize: '1.25rem', lineHeight: '1.6', textAlign: 'left', color: "var(--text-color)", marginTop: '-10px' }}>
                             Minors in Mathematics and Data Science
                         </Typography>
                         <div style={{ width: '100%', textAlign: 'left' }}>
@@ -200,7 +198,7 @@ const Resume = () => {
                             </Typography>
                         </div>
 
-                        <Typography variant="body1" gutterBottom component="div" style={{ fontSize: '1.25rem', lineHeight: '1.6', textAlign: 'left', color: '#F5F5F5' }}>
+                        <Typography variant="body1" gutterBottom component="div" style={{ fontSize: '1.25rem', lineHeight: '1.6', textAlign: 'left', color: "var(--text-color)" }}>
                             AS-T Degree in Computer Science
                         </Typography>
                     </div>
@@ -265,7 +263,7 @@ const Resume = () => {
                 <Typography variant="body1" gutterBottom component="div" style={{ fontSize: '1.8rem', marginBottom: '0px', textAlign: 'left', color: '#FFB6C1' }}>
                     PROJECTS
                 </Typography>
-                <Typography variant="body1" gutterBottom component="div" style={{ fontSize: '1.25rem', lineHeight: '1.6', textAlign: 'left', color: '#F5F5F5' }}>
+                <Typography variant="body1" gutterBottom component="div" style={{ fontSize: '1.25rem', lineHeight: '1.6', textAlign: 'left', color: "var(--text-color)" }}>
                     Library System Developed (Group Project) - Fall 2024
                 </Typography>
                 <Typography variant="body1" component="p" style={{ fontStyle: 'italic', fontSize: '1.25rem', textAlign: 'left' }}>
@@ -313,14 +311,14 @@ const Resume = () => {
                 </Typography>
                 {/* CPP Philosophy Department Section */}
                 <div style={{ width: '100%', textAlign: 'left' }}>
-                    <Typography variant="h3" component="h1" style={{ display: 'inline', fontSize: window.innerWidth < 768 ? '1.2rem' : '1.25rem', fontWeight: 'bold', color: 'white'}}>
+                    <Typography variant="h3" component="h1" style={{ display: 'inline', fontSize: window.innerWidth < 768 ? '1.2rem' : '1.25rem', fontWeight: 'bold', color: "var(--text-color)"}}>
                         Cal Poly Pomona | Philosophy Department 
                     </Typography>
                     <Typography variant="h6" component="h2" style={{display: 'inline', fontSize: window.innerWidth < 768 ? '1rem' : '1.1rem', fontWeight: 'normal', marginLeft: '10px'}}>
                         -- January 2025 - Present
                     </Typography>
                 </div>
-                <Typography variant="body1" gutterBottom component="div" style={{ fontStyle: 'italic', fontSize: '1.25rem', lineHeight: '1.6', textAlign: 'left', color: '#F5F5F5' }}>
+                <Typography variant="body1" gutterBottom component="div" style={{ fontStyle: 'italic', fontSize: '1.25rem', lineHeight: '1.6', textAlign: 'left', color: "var(--text-color)" }}>
                     Website Editor
                 </Typography>
                 <ul style={{ marginTop: '10px' }}>
@@ -345,14 +343,14 @@ const Resume = () => {
                 </ul>
                 {/* CPP TOM Department Section */}
                 <div style={{ width: '100%', textAlign: 'left' }}>
-                    <Typography variant="h3" component="h1" style={{ display: 'inline', fontSize: window.innerWidth < 768 ? '1.2rem' : '1.25rem', fontWeight: 'bold', color: 'white'}}>
+                    <Typography variant="h3" component="h1" style={{ display: 'inline', fontSize: window.innerWidth < 768 ? '1.2rem' : '1.25rem', fontWeight: 'bold', color: "var(--text-color)"}}>
                         Cal Poly Pomona | Technology and Operations Management Department 
                     </Typography>
                     <Typography variant="h6" component="h2" style={{display: 'inline', fontSize: window.innerWidth < 768 ? '1rem' : '1.1rem', fontWeight: 'normal', marginLeft: '10px'}}>
                         -- July 2024 - December 2024
                     </Typography>
                 </div>
-                <Typography variant="body1" gutterBottom component="div" style={{ fontStyle: 'italic', fontSize: '1.25rem', lineHeight: '1.6', textAlign: 'left', color: '#F5F5F5' }}>
+                <Typography variant="body1" gutterBottom component="div" style={{ fontStyle: 'italic', fontSize: '1.25rem', lineHeight: '1.6', textAlign: 'left', color: "var(--text-color)" }}>
                     Student Assistant
                 </Typography>
                 <div style={{ marginTop: '10px', marginBottom: '8px', fontSize: '1.25rem', textAlign: 'left' }}>
@@ -376,14 +374,14 @@ const Resume = () => {
 
                 {/* VietmediaTV Section */}
                 <div style={{ width: '100%', textAlign: 'left' }}>
-                    <Typography variant="h3" component="h1" style={{ display: 'inline', fontSize: window.innerWidth < 768 ? '1.2rem' : '1.25rem', fontWeight: 'bold', color: 'white'}}>
+                    <Typography variant="h3" component="h1" style={{ display: 'inline', fontSize: window.innerWidth < 768 ? '1.2rem' : '1.25rem', fontWeight: 'bold', color: "var(--text-color)"}}>
                         VietmediaTV | Garden Grove, CA
                     </Typography>
                     <Typography variant="h6" component="h2" style={{display: 'inline', fontSize: window.innerWidth < 768 ? '1rem' : '1.1rem', fontWeight: 'normal', marginLeft: '10px'}}>
                         -- May 2019 - Present
                     </Typography>
                 </div>
-                <Typography variant="body1" gutterBottom component="div" style={{ fontStyle: 'italic', fontSize: '1.25rem', lineHeight: '1.6', textAlign: 'left', color: '#F5F5F5' }}>
+                <Typography variant="body1" gutterBottom component="div" style={{ fontStyle: 'italic', fontSize: '1.25rem', lineHeight: '1.6', textAlign: 'left', color: "var(--text-color)" }}>
                     Video, News Editor and Graphic Designer
                 </Typography>
                 <div style={{ marginTop: '10px', marginBottom: '8px', fontSize: '1.25rem', textAlign: 'left' }}>

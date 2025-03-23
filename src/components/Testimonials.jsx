@@ -20,7 +20,7 @@ const testimonials = [
     company: "Cal Poly Pomona",
     role: "Professor",
     image: "/media/grid-photo.jpg",
-    text: "Write something here",
+    text: "Coming soon",
     highlighted: true, 
   },
   {
@@ -28,7 +28,7 @@ const testimonials = [
     company: "Cal Poly Pomona",
     role: "Professor",
     image: "/media/grid-photo.jpg",
-    text: "Write somthing here",
+    text: "Coming soon",
   },
 ];
 
@@ -100,7 +100,7 @@ const styles = {
   },
   subheading: {
     fontSize: "1.5rem",
-    color: "#cccccc",
+    color: "var(--text-color)",
     marginBottom: "10px",
     fontWeight: "300",
   },
@@ -108,7 +108,7 @@ const styles = {
     fontSize: "2.2rem",
     fontWeight: "bold",
     marginBottom: "40px",
-    color: "white",
+    color: "var(--text-color)",
   },
   card: {
     background: "#3f3f3f",

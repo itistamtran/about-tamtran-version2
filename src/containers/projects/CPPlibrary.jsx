@@ -2,8 +2,6 @@ import React from 'react';
 import { Container, Typography, Button, Grid } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { Link } from 'react-router-dom'; 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
 const theme = createTheme({
   components: {
@@ -20,8 +18,6 @@ const theme = createTheme({
   }
 });
 
-
-
 const CPPLibrary = () => {
   return (
     <Container maxWidth="lg" >
@@ -33,7 +29,7 @@ const CPPLibrary = () => {
             component="h1" 
             gutterBottom 
             className="text-3xl font-bold text-left text-white"
-            style={{ marginTop: '5rem', fontWeight: 'bold' }} 
+            style={{ marginTop: '5rem', fontWeight: 'bold', color: "var(--text-color)",}} 
         >
             Library System
         </Typography>
@@ -43,7 +39,7 @@ const CPPLibrary = () => {
             component="h2" 
             gutterBottom 
             className="text-5xl font-bold text-left text-white"
-            style={{ marginTop: '-1.2rem', fontWeight: 'bold' }} 
+            style={{ marginTop: '-1.2rem', fontWeight: 'bold', color: "var(--text-color)", }} 
         >
             Developed
         </Typography>
@@ -52,7 +48,7 @@ const CPPLibrary = () => {
         {/* Grid Layout: Left - Description | Right - Team & Technologies */}
         <Grid container spacing={4} className="mt-8">
           <Grid item xs={12} md={8}>
-            <Typography variant="body1" gutterBottom className="text-lg leading-7 text-left text-white">
+            <Typography variant="body1" gutterBottom className="text-lg leading-7 text-left text-white light:text-black">
               This is a group project that aims to create an online library system that provides streamlined services for students and library staff.
               Students can look up materials, create a book borrowing order, renew, and return books through our system.
               Meanwhile, staff can manage the book catalog and process students' orders.
@@ -62,23 +58,23 @@ const CPPLibrary = () => {
           <Typography
             variant="subtitle1"
             gutterBottom
-            className="text-left text-white"
+            className="text-left text-white light:text-black"
             style={{ fontWeight: "bold" }} 
             >
             Collaborative Team
             </Typography>
-            <Typography variant="body2" className="mb-6 text-left text-white">
+            <Typography variant="body2" className="mb-6 text-left text-white light:text-black">
               Tam Tran, Tram Tran, Vi Tran, An Nguyen, Thu Nguyen, David Lam
             </Typography>
             <Typography 
                 variant="subtitle1"
                 gutterBottom
-                className="text-left text-white"
+                className="text-left text-white light:text-black"
                 style={{ fontWeight: "bold", paddingTop: "10px" }} 
                 >
               Technologies
             </Typography>
-            <Typography variant="body2" className="text-left text-white">
+            <Typography variant="body2" className="text-left text-white light:text-black">
               NextJS, Material UI, Tailwind CSS, PostgreSQL, Prisma, Neon
             </Typography>
           </Grid>
@@ -93,8 +89,7 @@ const CPPLibrary = () => {
             </a>
         </div>
 
-
-        <Typography variant="body1" gutterBottom className="text-lg leading-7 text-left text-white">
+        <Typography variant="body1" gutterBottom className="text-lg leading-7 text-left text-white light:text-black">
           Below is the interface that library staff will see. Please click on 'View Project' to explore the user experience.
         </Typography>
 

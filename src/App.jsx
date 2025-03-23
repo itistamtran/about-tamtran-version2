@@ -10,6 +10,8 @@ import TopBar from "./components/topbar";
 import Footer from "./components/footer";
 import FeatureCard from "./components/FeatureCard";
 import Testimonials from "./components/Testimonials";
+import SkillsTechnologies from "./components/SkillsTechnologies";
+import TrailCursor from "./components/TrailCursor";
 import Projects from './containers/projects';
 import ForSale from './containers/forsale';
 import Contact from "./containers/contact";
@@ -29,19 +31,6 @@ function isWebGLSupported() {
   }
 }
 
-const gridContainerStyle = {
-  display: "grid",
-  gridTemplateColumns: "repeat(4, 1fr)", 
-  gap: "30px",
-  padding: "40px",
-  backgroundColor: "black",
-  width: "100vw", 
-  maxWidth: "100%",
-  justifyContent: "center", 
-  alignItems: "center", 
-  overflow: "hidden",
-  boxSizing: "border-box",
-};
 /* Responsive adjustments */
 const responsiveStyles = `
 @media (max-width: 1024px) {
@@ -68,36 +57,6 @@ const responsiveStyles = `
 }
 `;
 
-const imageContainerStyle = {
-  position: "relative",
-  width: "100%", 
-  maxWidth: "100%",
-  height: "auto",
-  overflow: "hidden",
-  borderRadius: "10px",
-  textAlign: "center",
-};
-
-const imageStyle = {
-  width: "100%",
-  height: "auto",
-  objectFit: "cover",
-  transition: "0.3s ease-in-out",
-};
-
-const overlayStyle = {
-  position: "absolute",
-  bottom: "0",
-  left: "0",
-  width: "100%",
-  padding: "10px",
-  background: "rgba(0, 0, 0, 0.6)",
-  color: "white",
-  textAlign: "center",
-  fontSize: "clamp(12px, 16px, 18px)",
-  fontWeight: "bold",
-  transition: "0.3s ease-in-out",
-};
 
 function App() {
   const [stars, setStars] = useState([]);
@@ -168,8 +127,10 @@ function App() {
 
   return (
     <Router>
-    <div style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}>
-     
+      <TrailCursor />
+    <div style={{ display: "flex", flexDirection: "column", minHeight: "100vh", backgroundColor: "var(--bg-color)", color: "var(--text-color)", }}>
+    
+
         <TopBar />
         <Routes>
           {/* Home Page */}
@@ -264,42 +225,22 @@ function App() {
               </Canvas>
             )}
           </div>
+          
 
-          {/* Image Grid Section */}
-          <div style={gridContainerStyle}>
-            {/* Image 1 */}
-            <div style={imageContainerStyle}>
-              <img src="/media/grid-photo.jpg" alt="analytical" style={imageStyle} />
-              <div style={overlayStyle}>analytical</div>
-            </div>
-
-            {/* Image 2 */}
-            <div style={imageContainerStyle}>
-              <img src="/media/grid-photo.jpg" alt="adaptable" style={imageStyle} />
-               <div style={overlayStyle}>adaptable</div>
-            </div>
-
-            {/* Image 3 */}
-            <div style={imageContainerStyle}>
-              <img src="/media/grid-photo.jpg" alt="innovative" style={imageStyle} />
-              <div style={overlayStyle}>innovative</div>
-            </div>
-
-            {/* Image 4 */}
-            <div style={imageContainerStyle}>
-              <img src="/media/grid-photo.jpg" alt="driven" style={imageStyle} />
-              <div style={overlayStyle}>driven</div>
-            </div>
-          </div>
+          {/* Image Grid Section 
+          
+          */}
+          
 
           {/* Pink rectangle below grid */}
           <div style={{
             width: "100%", 
             height: "40px", 
             backgroundColor: "#FFB6C1",
-            margin: "0px 0px",
+            margin: "10px 0px",
             borderRadius: "2px",
             whiteSpace: "nowrap",
+            marginBottom: "40px"
             }}>
             <div style={{
               display: "inline-block",
@@ -322,8 +263,6 @@ function App() {
             flexDirection: window.innerWidth < 768 ? "column" : "row",
             alignItems: "center",
             justifyContent: "center",
-            backgroundColor: "black",
-            color: "white",
             padding: "20px",
             paddingLeft: "30px",
             paddingRight: "30px",
@@ -332,6 +271,8 @@ function App() {
             overflow: "hidden",
             margin: "auto",
             textAlign: window.innerWidth < 768 ? "center" : "left",
+            backgroundColor: "var(--bg-color)",
+            color: "var(--text-color)",
             }}>
 
             {/* Left Side (Image) */}
@@ -346,14 +287,15 @@ function App() {
               paddingTop: "20px",
               }}>
               <img 
-                src="/media/grid-photo.jpg" 
+                src="/media/about-me.jpg" 
                 alt="about me"
                 style={{
                   width: "100%",
                   maxWidth: "800px",
                   height: "auto",
                   objectFit: "cover",
-                  borderRadius: "15px",
+                  borderTopLeftRadius: "35px",
+                  borderBottomRightRadius: "35px",
                 }}/>
             </div>
 
@@ -376,8 +318,11 @@ function App() {
                 maxWidth: "800px",
                 fontWeight: "300"
                 }}>
-                Hello, I'm Tam Tran. I'm often described as confident and brave—qualities that inspire me to tackle new challenges and continually seek self-improvement. I am pursuing a triple major in Computer Science, Data Science, and Mathematics at Cal Poly Pomona, where I am sharpening my skills and broadening my knowledge base.
-                For me, coding is more than just a technical skill – it's a powerful tool that allows me to turn innovative ideas into reality and make a meaningful impact on the world. I'm passionate about collaborating with others to create a brighter future, filled with wonder and endless possibilities. Let's work together to bring our shared vision to life.
+                I'm often described as confident and brave—qualities that drive me to embrace new challenges and continuously grow. I'm currently pursuing a major in Computer Science with minors in Data Science and Mathematics at Cal Poly Pomona, where I'm sharpening my skills and expanding my knowledge.
+                <br />
+                To me, coding is more than just a technical skill—it's a powerful tool to bring innovative ideas to life and create meaningful impact. I'm passionate about collaborating with others to shape a brighter future filled with curiosity, creativity, and endless possibilities.
+                <br />
+                Let’s work together to bring our shared vision to life.
               </p>
     
               {/* Contact Button */}
@@ -415,6 +360,8 @@ function App() {
               padding: "40px 0",
               textAlign: "center",  
             }}>
+            
+            <SkillsTechnologies />
   
             {/* Features Section */}
             <div style={{maxWidth: "1200px", width: "90%", background: "#FFB6C1", margin: "auto", }}>
@@ -422,9 +369,9 @@ function App() {
               <h2 className="features-title">Feature Highlights</h2>
               {/* Feature Cards Grid */}
               <div className="features-grid">
-                <FeatureCard title="Project" description="Check out my projects that showcase my problem-solving skills." link="/projects" image="/media/project.jpg" />
-                <FeatureCard title="Experience" description="With hands-on experience, I apply my skills to deliver innovative solutions." link="/resume" image="/media/experience.jpg" />
-                <FeatureCard title="For Sale" description="Explore the digital images I’ve created to find the perfect piece for your style." link="/forsale" image="/media/forsale-2.jpg" />
+                <FeatureCard title="Project" description="Check out my projects that showcase my problem-solving skills." link="/projects" image="/media/project-1.jpg" />
+                <FeatureCard title="Experience" description="With hands-on experience, I apply my skills to deliver innovative solutions." link="/resume" image="/media/experience-1.jpg" />
+                <FeatureCard title="For Sale" description="Explore the digital images I’ve created to find the perfect piece for your style." link="/forsale" image="/media/forsale-1.jpg" />
               </div>
             </div>
 
@@ -436,8 +383,7 @@ function App() {
                 color: black;
                 margin-bottom: -5px;
                 margin-top: 10px;
-                text-align: left;
-                margin-left: 20px;
+                text-align: center;
               }
 
               .features-grid {

@@ -15,13 +15,13 @@ const References = () => {
           <Grid item xs={12} md={6}>
             <Typography
               variant="h6"
-              className="font-semibold text-white" style={{ marginLeft: '20px', textAlign: 'left' }}
+              className="font-semibold" style={{ marginLeft: '20px', textAlign: 'left', color: "var(--text-color)" }}
             >
               Dr. Alex Madva
             </Typography>
             <Typography
               variant="body1"
-              className="text-white" style={{ marginLeft: '20px', textAlign: 'left' }}
+              className="text-white" style={{ marginLeft: '20px', textAlign: 'left', color: "var(--text-color)" }}
             >
               Associate Professor, Department of Philosophy <br />
               Director, California Center for Ethics & Policy <br />
@@ -30,7 +30,7 @@ const References = () => {
             </Typography>
             <Typography
               variant="body1"
-              className="text-white" style={{ marginLeft: '20px', textAlign: 'left' }}
+              className="text-white" style={{ marginLeft: '20px', textAlign: 'left',color: "var(--text-color)" }}
             >
               Cal Poly Pomona
             </Typography>
@@ -38,17 +38,15 @@ const References = () => {
               <FontAwesomeIcon icon={faPhone} className="mr-2 text-[#FFB6C1]" />
               <Typography
                 variant="body2"
-                className="text-white"
-              >
-                (909) 869-3847
+                style={{ color: "var(--text-color)" }}>
+                  (909) 869-3847
               </Typography>
             </div>
             <div className="flex items-center mt-2" style={{ marginLeft: '20px' }}>
               <FontAwesomeIcon icon={faEnvelope} className="mr-2 text-[#FFB6C1]" />
               <Typography
                 variant="body2"
-                className="text-white"
-              >
+                style={{ color: "var(--text-color)" }}>
                 ammadva@cpp.edu
               </Typography>
             </div>
@@ -58,13 +56,13 @@ const References = () => {
           <Grid item xs={12} md={6}>
             <Typography
               variant="h6"
-              className="font-semibold text-white" style={{ marginLeft: '20px', textAlign: 'left' }}
+              className="font-semibold" style={{ marginLeft: '20px', textAlign: 'left', color: "var(--text-color)" }}
             >
               Dr. Scott Roby
             </Typography>
             <Typography
               variant="body1"
-              className="text-white" style={{ marginLeft: '20px', textAlign: 'left' }}
+              style={{ marginLeft: '20px', textAlign: 'left', color: "var(--text-color)" }}
             >
               Professor of Mathematics            
               <br />
@@ -72,16 +70,14 @@ const References = () => {
             </Typography>
             <Typography
               variant="body1"
-              className="text-white" style={{ marginLeft: '20px', textAlign: 'left' }}
-            >
+              style={{ marginLeft: '20px', textAlign: 'left' }}>
               Cypress College
             </Typography>
             <div className="flex items-center mt-2">
               <FontAwesomeIcon icon={faPhone} className="mr-2 text-[#FFB6C1]" style={{ marginLeft: '20px' }}/>
               <Typography
                 variant="body2"
-                className="text-white"
-              >
+                style={{ color: "var(--text-color)" }}>
                 (714) 484-7000, ext. 48637
               </Typography>
             </div>
@@ -89,9 +85,8 @@ const References = () => {
               <FontAwesomeIcon icon={faEnvelope} className="mr-2 text-[#FFB6C1]" style={{ marginLeft: '20px' }}/>
               <Typography
                 variant="body2"
-                className="text-white" 
-              >
-                sroby@cypresscollege.edu
+                style={{ color: "var(--text-color)" }}>
+                  sroby@cypresscollege.edu
               </Typography>
             </div>
           </Grid>

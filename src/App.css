@@ -7,6 +7,39 @@
   min-height: 100vh; 
 }
 
+/* Default: Dark mode */
+:root {
+  --bg-color: #000;
+  --text-color: #fff;
+  --card-bg: #1a1a1a;
+  --border-color: rgba(255, 255, 255, 0.3);
+  --hover-color: #ffb6c1;
+}
+
+.light {
+  --bg-color: #fff;
+  --text-color: #000;
+  --card-bg: #f4f4f4;
+  --border-color: rgba(0, 0, 0, 0.2);
+  --hover-color: #d63384;
+}
+
+
+/* Apply to body */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+.card {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border-radius: 12px;
+}
+
+
 main {
   flex: 1; 
 }
@@ -17,13 +50,29 @@ html, body {
   overflow-x: hidden; 
   width: 100vw;
   height: auto;
-  background-color: black; 
   display: flex;
   flex-direction: column;
   font-family: "Google Sans", sans-serif;
   font-size: 18px;
   font-weight: 100;
 }
+
+body {
+  cursor: none;
+}
+
+.trail-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 9999px;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+
 
 /* Ensure all divs fit inside the screen */
 div {

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-// We load MathJax when needed
+// Load MathJax when needed
 const Math = ({ content }) => {
   useEffect(() => {
     if (window.MathJax) {

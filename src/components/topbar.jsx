@@ -1,9 +1,19 @@
 import React, { useState } from "react";
-import { AppBar, Toolbar, Typography, IconButton, Box, Drawer, List, ListItem, ListItemText } from "@mui/material";
+import {
+  AppBar,
+  Toolbar,
+  Typography,
+  IconButton,
+  Box,
+  Drawer,
+  List,
+  ListItem,
+  ListItemText,
+} from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import DarkModeIcon from "@mui/icons-material/DarkMode";
+import ThemeToggle from "./ThemeToggle";
 
 const Topbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -24,9 +34,9 @@ const Topbar = () => {
     <AppBar
       position="fixed"
       sx={{
-        backgroundColor: "black",
-        color: "white",
-        boxShadow: "none",
+        backgroundColor: "var(--bg-color)",
+        color: "var(--text-color)",
+        boxShadow: "0 2px 10px rgba(0,0,0,0.3)",
         paddingX: 2,
       }}
     >
@@ -39,8 +49,8 @@ const Topbar = () => {
           href="/"
           sx={{
             textDecoration: "none",
-            color: "white",
-            "&:hover": { color: "#FFB6C1" },
+            color: "var(--text-color)",
+            "&:hover": { color: "var(--hover-color)" },
           }}
         >
           Tam Tran
@@ -57,10 +67,9 @@ const Topbar = () => {
               sx={{
                 cursor: "pointer",
                 textDecoration: "none",
-                color: "white",
-                backdropFilter: "blur(10px)",
+                color: "var(--text-color)",
                 fontWeight: "bold",
-                "&:hover": { color: "#FFB6C1" }, 
+                "&:hover": { color: "var(--hover-color)" },
               }}
             >
               {item.label}
@@ -76,39 +85,24 @@ const Topbar = () => {
             href="https://www.linkedin.com/in/tamtran-/"
             target="_blank"
             rel="noopener noreferrer"
-            sx={{
-              transition: "0.3s",
-              "&:hover": { color: "#FFB6C1" }, 
-            }}
+            sx={{ transition: "0.3s", "&:hover": { color: "var(--hover-color)" } }}
           >
             <LinkedInIcon />
           </IconButton>
-          
+
           <IconButton
             color="inherit"
             component="a"
             href="https://github.com/itistamtran"
             target="_blank"
             rel="noopener noreferrer"
-            sx={{
-              transition: "0.3s",
-              "&:hover": { color: "#FFB6C1" },
-            }}
+            sx={{ transition: "0.3s", "&:hover": { color: "var(--hover-color)" } }}
           >
             <GitHubIcon />
           </IconButton>
 
-          <IconButton
-            color="inherit"
-            sx={{
-              transition: "0.3s",
-              "&:hover": { color: "#FFB6C1" }, 
-            }}
-          >
-            <DarkModeIcon />
-          </IconButton>
+          <ThemeToggle />
 
-          {/* Shown on Small Screens */}
           <IconButton
             color="inherit"
             sx={{ display: { md: "none" } }}
@@ -125,29 +119,37 @@ const Topbar = () => {
         open={mobileOpen}
         onClose={handleDrawerToggle}
         sx={{
-          "& .MuiDrawer-paper": { 
-            backgroundColor: "rgba(0, 0, 0, 0.4)", // Semi-transparent black
-            backdropFilter: "blur(20px)", // Background blur
+          "& .MuiDrawer-paper": {
+            backgroundColor: "var(--bg-color)",
+            color: "var(--text-color)",
+            backdropFilter: "blur(20px)",
             paddingY: 2,
             width: "50%",
             height: "37%",
             margin: "auto",
-            borderRadius: "15px",  
-            transition: "backdrop-filter 0.3s ease-in-out",
+            borderRadius: "15px",
             zIndex: 2000,
           },
         }}
       >
         <List>
           {navItems.map((item) => (
-            <ListItem button key={item.label} component="a" href={item.link} onClick={handleDrawerToggle}>
+            <ListItem
+              button
+              key={item.label}
+              component="a"
+              href={item.link}
+              onClick={handleDrawerToggle}
+            >
               <ListItemText
                 primary={item.label}
                 primaryTypographyProps={{
-                  fontWeight: "bold", 
-                  textAlign: "center", 
-                  color: "white", 
-                  sx: { "&:hover": { color: "#FFB6C1" } }, 
+                  fontWeight: "bold",
+                  textAlign: "center",
+                  sx: {
+                    color: "var(--text-color)",
+                    "&:hover": { color: "var(--hover-color)" },
+                  },
                 }}
               />
             </ListItem>

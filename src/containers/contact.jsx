@@ -37,7 +37,7 @@ export default function ContactPage() {
     };
 
     return (
-        <div className="flex flex-col items-center justify-center w-full min-h-screen p-6 " style={{ backgroundColor: 'black', color: 'white' }}>
+        <div className="flex flex-col items-center justify-center w-full min-h-screen p-6 " style={{ backgroundColor: "var(--bg-color)", color: "var(--text-color)", }}>
             <h1 className="mt-8 mb-6 text-3xl font-bold text-center sm:mt-0">
                 Get In Touch With Me
             </h1>
@@ -45,13 +45,13 @@ export default function ContactPage() {
             
             <div className="flex flex-col w-full max-w-5xl gap-8 md:flex-row" style={{ marginLeft: '80', marginTop: '50px' }}>
                 {/* Contact Information */}
-                <div className="flex-1 text-left">
-                    <p style={{ fontSize: '1.2rem', color: '#cccccc', lineHeight: 1.6 }}>
+                <div className="flex-1 text-left text-[#cccccc] light:text-black">
+                    <p style={{ fontSize: '1.2rem', lineHeight: 1.6 }}>
                         Feel free to reach out! Whether it’s about work, a project, or just a good conversation about mathematics, tech, and AI, 
                         I’m always open to connecting. You can contact me via email or by using the form.
                     </p>
     
-                    <h4 style={{ fontSize: '1.5rem', color: '#ffffff', marginBottom: '10px', marginTop: '15px', fontWeight: 'bold' }}>
+                    <h4 style={{ fontSize: '1.5rem', color: "var(--text-color)", marginBottom: '10px', marginTop: '15px', fontWeight: 'bold' }}>
                     Tam Tran
                     </h4>
     
