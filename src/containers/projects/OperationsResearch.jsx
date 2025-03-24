@@ -159,7 +159,13 @@ const OperationsResearch = () => {
               Collaborative Team
             </Typography>
             <Typography variant="body2" style={{ marginBottom: '20px', textAlign: 'left' }}>
-              Tam Tran, Erika Vazquez, Alyssa Poliakon
+              Tam Tran, Alyssa Poliakon, Erika Vazquez
+            </Typography>
+            <Typography variant="subtitle1" gutterBottom component="div" style={{ fontWeight: 700, textAlign: 'left' }}>
+              Advisor
+            </Typography>
+            <Typography variant="body2" style={{ marginBottom: '20px', textAlign: 'left' }}>
+              Dr. Jennifer Switkes
             </Typography>
             <Typography variant="subtitle1" gutterBottom component="div" style={{ fontWeight: 700, textAlign: 'left' }}>
               Technologies
