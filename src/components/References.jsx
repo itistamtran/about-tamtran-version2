@@ -58,7 +58,7 @@ const References = () => {
               variant="h6"
               className="font-semibold" style={{ marginLeft: '20px', textAlign: 'left', color: "var(--text-color)" }}
             >
-              Dr. Scott Roby
+              Dr. Jennifer Switkes
             </Typography>
             <Typography
               variant="body1"
@@ -66,19 +66,20 @@ const References = () => {
             >
               Professor of Mathematics            
               <br />
-              Science, Engineering, Mathematics Division
+              Department of Mathematics and Statistics, <br />
+              College of Science
             </Typography>
             <Typography
               variant="body1"
               style={{ marginLeft: '20px', textAlign: 'left' }}>
-              Cypress College
+              Cal Poly Pomona
             </Typography>
             <div className="flex items-center mt-2">
               <FontAwesomeIcon icon={faPhone} className="mr-2 text-[#FFB6C1]" style={{ marginLeft: '20px' }}/>
               <Typography
                 variant="body2"
                 style={{ color: "var(--text-color)" }}>
-                (714) 484-7000, ext. 48637
+                (909) 869-3489
               </Typography>
             </div>
             <div className="flex items-center mt-2">
@@ -86,7 +87,7 @@ const References = () => {
               <Typography
                 variant="body2"
                 style={{ color: "var(--text-color)" }}>
-                  sroby@cypresscollege.edu
+                  jmswitkes@cpp.edu
               </Typography>
             </div>
           </Grid>

@@ -10,7 +10,7 @@ const testimonials = [
         Science, Engineering and Math Division
       </>
     ),    
-    image: "/media/scott-roby.jpg",
+    image: "/media/dr.scott-roby.jpg",
     text: `My Calculus 2 class is focused on producing thorough and well-presented logical solutions to problems, 
           and Tam excelled at this. Tam performed exceptionally well in the class and finished the semester with one of the top grades. 
           My observations of Tam have shown a hard-working, talented, and well-rounded student with a lot of drive and potential.`,
@@ -24,11 +24,17 @@ const testimonials = [
     highlighted: true, 
   },
   {
-    name: "Professor's Name",
+    name: "Dr. Jennifer Switkes",
     company: "Cal Poly Pomona",
-    role: "Professor",
-    image: "/media/grid-photo.jpg",
-    text: "Coming soon",
+    role: <> 
+      Professor of Mathematics <br />
+      Department of Mathematics and Statistics, <br /> 
+      College of Science
+      </>,
+    image: "/media/dr.jenny_switkes.jpg",
+    text: `Tam Tran is a wonderful lifelong learner. 
+          She was a student in my Mathematics of Operations Research sequence. 
+          She is very bright, and she made great contributions to our class.`,
   },
 ];
 
