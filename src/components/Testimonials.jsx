@@ -16,11 +16,19 @@ const testimonials = [
           My observations of Tam have shown a hard-working, talented, and well-rounded student with a lot of drive and potential.`,
   },
   {
-    name: "Professor's Name",
+    name: "Dr. Alex Madva",
     company: "Cal Poly Pomona",
-    role: "Professor",
-    image: "/media/grid-photo.jpg",
-    text: "Coming soon",
+    role: (
+      <> 
+        Associate Professor, Department of Philosophy <br />
+        Director, California Center for Ethics & Policy <br />
+        Co-Director, Digital Humanities Consortium
+      </>
+    ), 
+    image: "/media/dr.alex.jpg",
+    text: `Tam is incredibly talented, dedicated, responsive, and responsible. She knows what we want before we do, and she has all the tools to make it happen. 
+          We’ve been especially grateful for her ingenuity and resourcefulness in navigating the many constraints imposed on websites by our university. 
+          I would—and do—trust her with all aspects of web design and a range of other essential digital skills. She's the best of the best.`,
     highlighted: true, 
   },
   {
