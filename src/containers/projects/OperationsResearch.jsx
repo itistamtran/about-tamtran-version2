@@ -44,7 +44,7 @@ const ImageSection = styled.div`
 `;
 
 const Image = styled.img`
-  width: 100%; // or max-width if you want to constrain it
+  width: 100%; 
   height: auto;
 `; 
 
