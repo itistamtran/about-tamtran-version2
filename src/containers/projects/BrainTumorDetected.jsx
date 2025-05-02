@@ -125,23 +125,17 @@ const BrainTumorDetected = () => {
             <Typography variant="subtitle1" gutterBottom component="div" style={{ fontWeight: 700, textAlign: 'left' }}>
                 Advisor: Dr. Hao Ji
             </Typography>
-            <Typography variant="subtitle1" gutterBottom component="div" style={{ fontWeight: 700, textAlign: 'left'}}>
-                Programming Languages
+            <Typography variant="subtitle1" gutterBottom component="div" style={{ fontWeight: 700, textAlign: 'left' }}>
+                Tools & Libraries
             </Typography>
             <Typography variant="body2" style={{ marginBottom: '20px', textAlign: 'left' }} >
-                Python
+                Python 3.x, TensorFlow/Keras, NumPy, Pandas, Matplotlib, Seaborn, OpenCV, imutils, Pillow, scikit-learn, TensorBoard
             </Typography>
             <Typography variant="subtitle1" gutterBottom component="div" style={{ fontWeight: 700, textAlign: 'left' }}>
-                Libraries & Frameworks
-            </Typography>
-            <Typography variant="body2" style={{ marginBottom: '20px', textAlign: 'left' }} >
-                TensorFlow, Keras, OpenCV, Scikit-learn, NumPy, Matplotlib, imutils
-            </Typography>
-            <Typography variant="subtitle1" gutterBottom component="div" style={{ fontWeight: 700, textAlign: 'left' }}>
-                Tools
+                Development Environment
             </Typography>
             <Typography variant="body2" style={{ textAlign: 'left', marginBottom: '0px' }}>
-                Jupyter Notebook, TensorBoard
+                Jupyter Notebook
             </Typography>
 
           </Grid>
