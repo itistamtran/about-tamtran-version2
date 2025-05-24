@@ -4,27 +4,34 @@ import { Link } from "react-router-dom";
 const projects = [
     {
         id: 1,
-        title: "Nurse Schedule",
-        imageUrl: "/media/nurse-schedule-1.png",
-        tags: ["2024", "MATLAB", " Mathematical Modeling", "Optimization"],
-        link: "/allprojects/NurseSchedule"
+        title: "Brain Tumor Detected",
+        imageUrl: "/media/brain-tumor-detected.jpg",
+        tags: ["2025", "Machine Learning", "Python", "TensorFlow", "Scikit-learn", "Keras"],
+        link: "/allprojects/BrainTumorDetected"
     },
     {
         id: 2,
-        title: "Knapsack Problem for Real-World Humanitarian Logistics",
-        imageUrl: "/media/knapsack-logistics.png",
-        tags: ["2025", "Python", "Pulp", "Pandas", "Mathematical Modeling", "MATLAB"],
-        link: "/allprojects/KnapsackLogistics"
+        title: "Machine Learning Predicts Market Trends",
+        imageUrl: "/media/market-trend.png",
+        tags: ["2025", "Python", "TensorFlow", "Scikit-learn", "Keras"],
+        link: "/allprojects/MarketTrendLSTM"
+    },
+    {
+        id: 3,
+        title: "Toxic Comment Classification",
+        imageUrl: "/media/toxic-comment-classification.png",
+        tags: ["2025", "Python", "Scikit-learn", "nltk", "Pandas"],
+        link: "/allprojects/ToxicCommentClassification"
     }
     
 ];
 
-export default function OperationsResearch() {
+export default function MachineLearning() {
     return (
         <div className="max-w-7xl mx-auto relative min-h-screen flex flex-col justify-start w-full bg-[black] light:bg-white pt-6 sm:pt-4">
         {/* Title */}
             <h1 className="text-4xl font-bold text-center text-white light:text-black w-full mt-15 sm:mt-15 mb-10">
-                Operations Research Projects
+                Machine Learning Projects
             </h1>
            
             {/* Project Cards Grid */}

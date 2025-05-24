@@ -12,14 +12,20 @@ import FeatureCard from "./components/FeatureCard";
 import Testimonials from "./components/Testimonials";
 import SkillsTechnologies from "./components/SkillsTechnologies";
 import TrailCursor from "./components/TrailCursor";
-import Projects from './containers/projects';
 import ForSale from './containers/forsale';
 import Contact from "./containers/contact";
 import Resume from "./containers/resume";
-import CPPLibrary from "./containers/projects/CPPlibrary";
+import Projects from './containers/projects';
+import SoftwareApplications from "./containers/projects/SoftwareApplications";
 import OperationsResearch from "./containers/projects/OperationsResearch";
-import BrainTumorDetected from "./containers/projects/BrainTumorDetected";
-
+import MachineLearning from "./containers/projects/MachineLearning.jsx";
+import AllProjects from "./containers/allprojects";
+import CPPLibrary from "./containers/allprojects/CPPlibrary";
+import NurseSchedule from "./containers/allprojects/NurseSchedule";
+import KnapsackLogistics from "./containers/allprojects/KnapsackLogistics";
+import BrainTumorDetected from "./containers/allprojects/BrainTumorDetected";
+import MarketTrendLSTM from "./containers/allprojects/MarketTrendLSTM";
+import ToxicCommentClassification from "./containers/allprojects/ToxicCommentClassification";
 import "./App.css";
 
 function isWebGLSupported() {
@@ -413,9 +419,18 @@ function App() {
           <Route path="/resume" element={<Resume/>} />
           
           <Route path="/projects" element={<Projects />} />
-          <Route path="/projects/CPPlibrary" element={<CPPLibrary/>} />
-          <Route path="/projects/OperationsResearch" element={<OperationsResearch/>} />
-          <Route path="/projects/BrainTumorDetected" element={<BrainTumorDetected/>} />
+          <Route path="/projects/SoftwareApplications" element={<SoftwareApplications />} />
+          <Route path="/projects/OperationsResearch" element={<OperationsResearch />} />
+          <Route path="/projects/MachineLearning" element={<MachineLearning />} />
+          
+          {/* All Projects */}
+          <Route path="/allprojects" element={<AllProjects />} />
+          <Route path="/allprojects/CPPlibrary" element={<CPPLibrary/>} />
+          <Route path="/allprojects/NurseSchedule" element={<NurseSchedule/>} />
+          <Route path="/allprojects/KnapsackLogistics" element={<KnapsackLogistics/>} />
+          <Route path="/allprojects/BrainTumorDetected" element={<BrainTumorDetected/>} />
+          <Route path="/allprojects/MarketTrendLSTM" element={<MarketTrendLSTM/>} />
+          <Route path="/allprojects/ToxicCommentClassification" element={<ToxicCommentClassification/>} />
 
         </Routes>      
         <Footer />    

@@ -106,17 +106,19 @@ const BrainTumorDetected = () => {
         {/* Grid Layout: Left - Description | Right - Technologies */}
         <Grid container spacing={4} style={{ marginTop: '20px', alignItems: 'flex-start' }}>
           <Grid item xs={12} md={8}>
-          <Typography variant="body1" gutterBottom component="div" style={{ fontSize: '1.25rem', lineHeight: '1.6', textAlign: 'left' }}>
-            Developed a deep learning model using CNN to detect brain tumors from MRI scans, aiming to assist in early diagnosis and clinical decision-making.
-          </Typography>
+            <Typography variant="body1" gutterBottom component="div" style={{ fontSize: '1rem', lineHeight: '1.6', textAlign: 'left' }}>
+              April 26, 2025
+            </Typography>
+            <Typography variant="body1" gutterBottom component="div" style={{ fontSize: '1.25rem', lineHeight: '1.6', textAlign: 'left' }}>
+              Developed a deep learning model using CNN to detect brain tumors from MRI scans, aiming to assist in early diagnosis and clinical decision-making.
+            </Typography>
           
-          {/* Button */}
-          <AlignedContainer>
-            <StyledButton variant="contained" href="https://github.com/itistamtran/cnn-brain-tumor-detection-binary-multiclass">
+            {/* Button */}
+            <AlignedContainer>
+              <StyledButton variant="contained" href="https://github.com/itistamtran/cnn-brain-tumor-detection-binary-multiclass">
                 View Project
-            </StyledButton>
-          </AlignedContainer>
-    
+              </StyledButton>
+            </AlignedContainer>
           </Grid>
           <Grid item xs={12} md={4}>
           <Typography variant="subtitle1" gutterBottom component="div" style={{ fontWeight: 700, textAlign: 'left' }}>

@@ -4,27 +4,20 @@ import { Link } from "react-router-dom";
 const projects = [
     {
         id: 1,
-        title: "Nurse Schedule",
-        imageUrl: "/media/nurse-schedule-1.png",
-        tags: ["2024", "MATLAB", " Mathematical Modeling", "Optimization"],
-        link: "/allprojects/NurseSchedule"
+        title: "Library System Developed",
+        imageUrl: "/media/cpp-library-2.png",
+        tags: ["2024", "DEV", "NextJS", "MaterialUI", "TailwindCSS"],
+        link: "/allprojects/CPPlibrary"
     },
-    {
-        id: 2,
-        title: "Knapsack Problem for Real-World Humanitarian Logistics",
-        imageUrl: "/media/knapsack-logistics.png",
-        tags: ["2025", "Python", "Pulp", "Pandas", "Mathematical Modeling", "MATLAB"],
-        link: "/allprojects/KnapsackLogistics"
-    }
     
 ];
 
-export default function OperationsResearch() {
+export default function SoftwareApplications() {
     return (
         <div className="max-w-7xl mx-auto relative min-h-screen flex flex-col justify-start w-full bg-[black] light:bg-white pt-6 sm:pt-4">
         {/* Title */}
             <h1 className="text-4xl font-bold text-center text-white light:text-black w-full mt-15 sm:mt-15 mb-10">
-                Operations Research Projects
+                Software Applications Projects
             </h1>
            
             {/* Project Cards Grid */}
