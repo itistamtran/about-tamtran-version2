@@ -107,15 +107,16 @@ function App() {
 
     if (!document.querySelector("#scroll-text-style")) {
       const styleTag = document.createElement("style");
-      styleTag.id = "scroll-text-style";  
+      styleTag.id = "scroll-text-style";
       styleTag.innerHTML = `
-          @keyframes scrollText {
-              from { transform: translateX(100%); }
-              to { transform: translateX(-100%); }
-          }
+        @keyframes marquee {
+          0%   { transform: translateX(100%); }
+          100% { transform: translateX(0%); }
+        }
       `;
       document.head.appendChild(styleTag);
     }
+  
     // Run the position and height functions
     updatePosition();
     updateStarsHeight(); // Set initial height
@@ -240,26 +241,29 @@ function App() {
 
           {/* Pink rectangle below grid */}
           <div style={{
-            width: "100%", 
-            height: "40px", 
+            width: "100%",
+            height: "40px",
             backgroundColor: "#FFB6C1",
-            margin: "10px 0px",
-            borderRadius: "2px",
+            overflow: "hidden",
+            position: "relative",
             whiteSpace: "nowrap",
-            marginBottom: "40px"
-            }}>
-            <div style={{
-              display: "inline-block",
+            borderRadius: "2px",
+            margin: "10px 0 40px",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            color: "black",
+            fontSize: "0.95rem",
+            fontWeight: "bold",
+          }}>
+            <div className="marquee-track" style={{
+              display: "inline-flex",
               whiteSpace: "nowrap",
-              fontSize: "1.2rem",
-              fontWeight: "bold",
-              color: "black",
-              textAlign: "center",
-              alignItems: "center", 
-              paddingTop: "4px",
-              animation: "scrollText 30s linear infinite", // Makes text loop continuously
-              }}>
-                🎉 Exciting Collaborations Await! Let's Build Something Amazing Together! 🎉 Exciting Collaborations Await! Let's Build Something Amazing Together! 🎉
+              animation: "marquee 20s linear infinite",
+            }}>
+              <span className="marquee-text" style={{ paddingRight: "80px" }}>
+                🎉 Exciting Collaborations Await! Let's Build Something Amazing Together! 🎉 Exciting Collaborations Await! Let's Build Something Amazing Together!
+              </span>
             </div>
           </div>
 
