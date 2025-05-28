@@ -26,6 +26,8 @@ import KnapsackLogistics from "./containers/allprojects/KnapsackLogistics";
 import BrainTumorDetected from "./containers/allprojects/BrainTumorDetected";
 import MarketTrendLSTM from "./containers/allprojects/MarketTrendLSTM";
 import ToxicCommentClassification from "./containers/allprojects/ToxicCommentClassification";
+import MedScanAI from "./containers/allprojects/MedScanAI";
+
 import "./App.css";
 
 function isWebGLSupported() {
@@ -435,6 +437,7 @@ function App() {
           <Route path="/allprojects/BrainTumorDetected" element={<BrainTumorDetected/>} />
           <Route path="/allprojects/MarketTrendLSTM" element={<MarketTrendLSTM/>} />
           <Route path="/allprojects/ToxicCommentClassification" element={<ToxicCommentClassification/>} />
+          <Route path="/allprojects/MedScanAI" element={<MedScanAI/>} />
 
         </Routes>      
         <Footer />    
