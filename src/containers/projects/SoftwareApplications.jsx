@@ -9,6 +9,13 @@ const projects = [
         tags: ["2024", "DEV", "NextJS", "MaterialUI", "TailwindCSS"],
         link: "/allprojects/CPPlibrary"
     },
+    {
+        id: 2,
+        title: "Medical Image Analysis",
+        imageUrl: "/media/medscanai.png",
+        tags: ["2025", "Machine Learning", "Flask", "Vite", "React"],
+        link: "/allprojects/MedScanAI"
+    },
     
 ];
 
