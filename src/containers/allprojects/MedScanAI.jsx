@@ -39,6 +39,26 @@ const AlignedContainer = styled.div`
   margin-bottom: 2rem;
 `;
 
+const VideoWrapper = styled.div`
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 2rem auto;
+  padding-top: 56.25%; /* 16:9 */
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(255, 182, 193, 0.5);
+  overflow: hidden;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+`;
+
 const MedScanAI = () => {
   return (
     <Container maxWidth="lg" >
@@ -111,18 +131,15 @@ const MedScanAI = () => {
           Below is the demo of the website. Please click on "GitHub Repo" to see the source codes or click "Visit Website" to explore the user experience.
         </Typography>
 
-        {/* Demo Video */}
-        <video
-          className="w-full h-auto mt-10 mb-6"
-          controls
-          loop
-          autoPlay
-          muted
-          src="/media/medscanai-demo.mp4"
-          style={{ borderRadius: '8px', boxShadow: '0 4px 20px rgba(255, 182, 193, 0.5)', marginTop: '1rem' }}
-        >
-            Your browser does not support the video tag.
-        </video>
+        {/* Responsive YouTube Embed */}
+        <VideoWrapper>
+            <iframe
+                src="https://www.youtube.com/embed/OZBFaZuboUA?autoplay=1&mute=1&loop=1&playlist=OZBFaZuboUA"
+                title="MedScanAI Demo"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+            ></iframe>
+        </VideoWrapper>
 
       </ThemeProvider>
     </Container>
