@@ -2,6 +2,11 @@ import React from 'react';
 import { Typography, Box } from '@mui/material';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import MenuIcon from "@mui/icons-material/Menu";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import IconButton from "@mui/material/IconButton";
+import ViewCounter from './ViewCounter';
 
 const FooterWrapper = styled(Box)`
   width: 100vw;
@@ -66,7 +71,33 @@ const Footer = () => {
         <Typography variant="body2" style={{ color: 'white' }}>
           © 2025 Tam Tran. All rights reserved.
         </Typography>
-        <StyledLink to="/">Home</StyledLink>
+        <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+          <IconButton
+            aria-label="LinkedIn"
+            color="inherit"
+            component="a"
+            href="https://www.linkedin.com/in/tamtran-/"
+            target="_blank"
+            rel="noopener noreferrer"
+            sx={{ transition: "0.3s", "&:hover": { color: "var(--hover-color)" } }}
+          >
+            <LinkedInIcon />
+          </IconButton>
+
+          <IconButton
+            aria-label="GitHub"
+            color="inherit"
+            component="a"
+            href="https://github.com/itistamtran"
+            target="_blank"
+            rel="noopener noreferrer"
+            sx={{ transition: "0.3s", "&:hover": { color: "var(--hover-color)" } }}
+          >
+            <GitHubIcon />
+          </IconButton>
+          <ViewCounter />
+        </Box>
+        
       </FooterContainer>
 
     </FooterWrapper>

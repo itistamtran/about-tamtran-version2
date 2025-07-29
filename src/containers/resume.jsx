@@ -373,7 +373,7 @@ const Resume = () => {
                     </Grid>
                     {/* Right: Dates */}
                     <Grid item xs={12} md={3} style={{ textAlign: 'right' }}>
-                        <Typography variant="h6" component="h2" style={{ fontSize: window.innerWidth < 768 ? '1rem' : '1.1rem', fontWeight: 'normal' }}>
+                        <Typography variant="h6" component="h2" style={{ fontSize: '1.1rem', fontWeight: 'normal' }}>
                             Jan 2025 - Present
                         </Typography>
                     </Grid>
@@ -414,7 +414,7 @@ const Resume = () => {
                     </Grid>
                     {/* Right: Dates */}
                     <Grid item xs={12} md={3} style={{ textAlign: 'right' }}>
-                        <Typography variant="h6" component="h2" style={{ fontSize: window.innerWidth < 768 ? '1rem' : '1.1rem', fontWeight: 'normal', marginTop: '20px' }}>
+                        <Typography variant="h6" component="h2" style={{ fontSize: '1.1rem', fontWeight: 'normal', marginTop: '20px' }}>
                             July 2024 - December 2024
                         </Typography>
                     </Grid>

@@ -185,6 +185,7 @@ function App() {
               textShadow: "0 0 10px rgba(255, 255, 255, 0.8)",
               }}>
               Computer Science | Data Science | Mathematics
+              <br /> AI Engineer | Building real-world solutions with code and creativity
             </div>
 
             {/* Centered Animated Description */}
@@ -322,7 +323,7 @@ function App() {
                 fontSize: "clamp(1.2rem, 4vw, 2rem)",
                 fontWeight: "bold",
                 }}>
-                About Me
+                Welcome to My Portfolio
               </h2>
               <p style={{
                 fontSize: "clamp(1rem, 2vw, 1.2rem)",
@@ -330,16 +331,22 @@ function App() {
                 maxWidth: "800px",
                 fontWeight: "300"
                 }}>
-                I'm often described as confident and brave—qualities that drive me to embrace new challenges and continuously grow. I'm currently pursuing a major in Computer Science with minors in Data Science and Mathematics at Cal Poly Pomona, where I'm sharpening my skills and expanding my knowledge.
+                I am passionate about harnessing the power of artificial intelligence to solve real-world challenges and advance meaningful innovation. As a Computer Science student with strong foundations in Data Science and Mathematics, I thrive at the intersection of research and technology, where curiosity drives discovery and practical solutions.
                 <br />
-                To me, coding is more than just a technical skill—it's a powerful tool to bring innovative ideas to life and create meaningful impact. I'm passionate about collaborating with others to shape a brighter future filled with curiosity, creativity, and endless possibilities.
+                <span style={{ display: "block", height: "0.5em" }}></span>
+                My projects showcase hands-on experience in AI development, from machine learning models to data-driven applications. I am committed to ongoing learning, actively exploring the latest research and applying new techniques to build smarter, more impactful technology.
                 <br />
-                Let’s work together to bring our shared vision to life.
+                <span style={{ display: "block", height: "0.5em" }}></span>
+                I invite you to explore my work and see how my skills, determination, and vision can make a positive impact. Let’s connect and create something meaningful together.
               </p>
     
-              {/* Contact Button */}
-              <Link to="/contact" style={{ textDecoration: "none" }}>
-                <button style={{
+              {/* See My Work Button */}
+              <motion.button
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.7, ease: "easeOut" }}
+                onClick={() => { document.getElementById('feature-highlights').scrollIntoView({ behavior: 'smooth' });}}
+                style={{
                   marginTop: "15px",
                   padding: "12px 24px",
                   backgroundColor: "black",
@@ -350,19 +357,18 @@ function App() {
                   borderRadius: "25px",
                   cursor: "pointer",
                   transition: "0.3s ease-in-out",
+                  }}
+                onMouseOver={(e) => {
+                  e.target.style.backgroundColor = "#FFB6C1";
+                  e.target.style.color = "black";
                 }}
-                  onMouseOver={(e) => {
-                    e.target.style.backgroundColor = "#FFB6C1";  
-                    e.target.style.color = "black";
-                  }}
-                  onMouseOut={(e) => {
-                    e.target.style.backgroundColor = "black"; 
-                    e.target.style.color = "#FFB6C1";         
-                  }}
-                >
-                  CONTACT ME
-                </button>
-              </Link>
+                onMouseOut={(e) => {
+                  e.target.style.backgroundColor = "black";
+                  e.target.style.color = "#FFB6C1";
+                }}
+              >
+                See My Work
+              </motion.button>
             </div>
           </div>    
 
@@ -376,7 +382,7 @@ function App() {
             <SkillsTechnologies />
   
             {/* Features Section */}
-            <div style={{maxWidth: "1200px", width: "90%", background: "#FFB6C1", margin: "auto", }}>
+            <div id="feature-highlights" style={{maxWidth: "1200px", width: "90%", background: "#FFB6C1", margin: "auto", }}>
               {/* Features Title */}
               <h2 className="features-title">Feature Highlights</h2>
               {/* Feature Cards Grid */}

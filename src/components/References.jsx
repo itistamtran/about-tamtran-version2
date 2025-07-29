@@ -15,13 +15,13 @@ const References = () => {
           <Grid item xs={12} md={6}>
             <Typography
               variant="h6"
-              className="font-semibold" style={{ marginLeft: '20px', textAlign: 'left', color: "var(--text-color)" }}
+              className="font-semibold" style={{ marginLeft: '20px', textAlign: 'left', fontWeight: 'bold', color: '#FFB6C1' }}
             >
               Dr. Alex Madva
             </Typography>
             <Typography
               variant="body1"
-              className="text-white" style={{ marginLeft: '20px', textAlign: 'left', color: "var(--text-color)" }}
+              className="text-white" style={{ marginLeft: '20px', textAlign: 'left', color: "var(--text-color)", fontSize: '1.25rem' }}
             >
               Associate Professor, Department of Philosophy <br />
               Director, California Center for Ethics & Policy <br />
@@ -30,7 +30,7 @@ const References = () => {
             </Typography>
             <Typography
               variant="body1"
-              className="text-white" style={{ marginLeft: '20px', textAlign: 'left',color: "var(--text-color)" }}
+              className="text-white" style={{ marginLeft: '20px', textAlign: 'left',color: "var(--text-color)", fontSize: '1.25rem' }}
             >
               Cal Poly Pomona
             </Typography>
@@ -38,7 +38,7 @@ const References = () => {
               <FontAwesomeIcon icon={faPhone} className="mr-2 text-[#FFB6C1]" />
               <Typography
                 variant="body2"
-                style={{ color: "var(--text-color)" }}>
+                style={{ color: "var(--text-color)", fontSize: '1.25rem'}}>
                   (909) 869-3847
               </Typography>
             </div>
@@ -46,7 +46,7 @@ const References = () => {
               <FontAwesomeIcon icon={faEnvelope} className="mr-2 text-[#FFB6C1]" />
               <Typography
                 variant="body2"
-                style={{ color: "var(--text-color)" }}>
+                style={{ color: "var(--text-color)", fontSize: '1.25rem' }}>
                 ammadva@cpp.edu
               </Typography>
             </div>
@@ -56,13 +56,13 @@ const References = () => {
           <Grid item xs={12} md={6}>
             <Typography
               variant="h6"
-              className="font-semibold" style={{ marginLeft: '20px', textAlign: 'left', color: "var(--text-color)" }}
+              className="font-semibold" style={{ marginLeft: '20px', textAlign: 'left', fontWeight: 'bold', color: '#FFB6C1' }}
             >
               Dr. Jennifer Switkes
             </Typography>
             <Typography
               variant="body1"
-              style={{ marginLeft: '20px', textAlign: 'left', color: "var(--text-color)" }}
+              style={{ marginLeft: '20px', textAlign: 'left', color: "var(--text-color)", fontSize: '1.25rem' }}
             >
               Professor of Mathematics            
               <br />
@@ -71,14 +71,14 @@ const References = () => {
             </Typography>
             <Typography
               variant="body1"
-              style={{ marginLeft: '20px', textAlign: 'left' }}>
+              style={{ marginLeft: '20px', textAlign: 'left', fontSize: '1.25rem' }}>
               Cal Poly Pomona
             </Typography>
             <div className="flex items-center mt-2">
               <FontAwesomeIcon icon={faPhone} className="mr-2 text-[#FFB6C1]" style={{ marginLeft: '20px' }}/>
               <Typography
                 variant="body2"
-                style={{ color: "var(--text-color)" }}>
+                style={{ color: "var(--text-color)", fontSize: '1.25rem' }}>
                 (909) 869-3489
               </Typography>
             </div>
@@ -86,7 +86,7 @@ const References = () => {
               <FontAwesomeIcon icon={faEnvelope} className="mr-2 text-[#FFB6C1]" style={{ marginLeft: '20px' }}/>
               <Typography
                 variant="body2"
-                style={{ color: "var(--text-color)" }}>
+                style={{ color: "var(--text-color)", fontSize: '1.25rem' }}>
                   jmswitkes@cpp.edu
               </Typography>
             </div>

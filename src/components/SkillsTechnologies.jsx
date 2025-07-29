@@ -5,11 +5,11 @@ import { VscVscode } from "react-icons/vsc";
 import { TbBrandCpp } from "react-icons/tb";
 
 const skills = [
-  { name: "HTML", icon: <FaHtml5 color="#e34c26" /> },
-  { name: "CSS", icon: <FaCss3Alt color="#264de4" /> },
+  { name: "Python", icon: <FaPython color="#3776ab" /> },
   { name: "JavaScript", icon: <FaJs color="#f7df1e" /> },
   { name: "TypeScript", icon: <SiTypescript color="#3178c6" /> },
-  { name: "Python", icon: <FaPython color="#3776ab" /> },
+  { name: "HTML", icon: <FaHtml5 color="#e34c26" /> },
+  { name: "CSS", icon: <FaCss3Alt color="#264de4" /> },
   { name: "Java", icon: <FaJava color="#f89820" /> },
   { name: "C++", icon: <TbBrandCpp color="#00599c" /> },
   { name: "SQL", icon: <SiMysql color="#00758f" /> },

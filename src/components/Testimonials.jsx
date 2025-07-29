@@ -2,20 +2,6 @@ import React from "react";
 
 const testimonials = [
   {
-    name: "Scott Roby, PhD",
-    company: "Cypress College",
-    role: (
-      <> 
-        Professor of Mathematics <br />
-        Science, Engineering and Math Division
-      </>
-    ),    
-    image: "/media/dr.scott-roby.jpg",
-    text: `My Calculus 2 class is focused on producing thorough and well-presented logical solutions to problems, 
-          and Tam excelled at this. Tam performed exceptionally well in the class and finished the semester with one of the top grades. 
-          My observations of Tam have shown a hard-working, talented, and well-rounded student with a lot of drive and potential.`,
-  },
-  {
     name: "Dr. Alex Madva",
     company: "Cal Poly Pomona",
     role: (
@@ -30,6 +16,20 @@ const testimonials = [
           We’ve been especially grateful for her ingenuity and resourcefulness in navigating the many constraints imposed on websites by our university. 
           I would—and do—trust her with all aspects of web design and a range of other essential digital skills. She's the best of the best.`,
     highlighted: true, 
+  },
+  {
+    name: "Dr. Scott Roby",
+    company: "Cypress College",
+    role: (
+      <> 
+        Professor of Mathematics <br />
+        Science, Engineering and Math Division
+      </>
+    ),    
+    image: "/media/dr.scott-roby.jpg",
+    text: `My Calculus 2 class is focused on producing thorough and well-presented logical solutions to problems, 
+          and Tam excelled at this. Tam performed exceptionally well in the class and finished the semester with one of the top grades. 
+          My observations of Tam have shown a hard-working, talented, and well-rounded student with a lot of drive and potential.`,
   },
   {
     name: "Dr. Jennifer Switkes",
@@ -130,10 +130,6 @@ const styles = {
     padding: "20px",
     boxShadow: "0px 4px 10px rgba(219, 16, 118, 0.5)",
     textAlign: "left",
-  },
-  highlightedCard: {
-    background: "#595959", 
-    padding: "20px",
   },
   profileContainer: {
     display: "flex",
