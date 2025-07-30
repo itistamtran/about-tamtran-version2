@@ -97,7 +97,7 @@ const descriptionStyle = {
   fontSize: "0.9rem",
 };
 
-// ✅ Link Style
+// Link Style
 const cardLinkStyle = {
   textDecoration: "none",
 };

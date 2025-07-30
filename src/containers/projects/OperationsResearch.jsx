@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Typography } from '@mui/material';
+import { motion } from "framer-motion";
 
 const projects = [
     {
@@ -26,14 +28,22 @@ export default function OperationsResearch() {
             <h1 className="text-4xl font-bold text-center text-white light:text-black w-full mt-15 sm:mt-15 mb-10">
                 Operations Research Projects
             </h1>
+            <Typography style={{ fontSize: '1.2rem',  textAlign: 'center', fontFamily: 'Montserrat, sans-serif', padding: '60px', alignItems: 'center', marginBottom: '40px', marginTop: '-20px', }}>
+                My operations research projects focus on applying mathematical modeling and optimization techniques to solve real-world problems. I’ve worked on projects like creating efficient nurse scheduling solutions using MATLAB, as well as using the knapsack algorithm to improve humanitarian logistics with Python and data analysis tools. These experiences have helped me turn complex challenges into practical, data-driven solutions.
+            </Typography>
            
             {/* Project Cards Grid */}
             <div className="flex justify-center">
                 <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-3">
                     {projects.map((project) => (
                     <Link to={project.link} key={project.id} className="relative block transition duration-300 transform hover:scale-105">
-                    <div 
-                        className="rounded-xl p-6 w-[370px] h-[440px] transition duration-300 
+                    <motion.div 
+                        initial={{ opacity: 0, y: 40 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, amount: 0.3 }}
+                        whileHover={{ rotate: 3, scale: 1.05 }}
+                        transition={{ duration: 0.7, ease: "easeOut", delay: project.id * 0.08 }}
+                        className="rounded-xl p-6 w-[320px] h-[440px] transition duration-300 
                             hover:shadow-[0px_0px_30px_rgba(0,255,128,0.5)] 
                             transform rotate-[3deg] hover:rotate-0 md:w-[320px] md:h-[400px] sm:w-[250px] sm:h-[360px]
                             bg-[#121212] light:bg-[#818181] border border-[#FFB6C1]"
@@ -65,7 +75,7 @@ export default function OperationsResearch() {
                             </span>
                             ))}
                         </div>
-                    </div>
+                    </motion.div>
                     </Link>
                     ))}
                 </div>
