@@ -104,7 +104,7 @@ export default function TrulyInfiniteChainMarquee() {
           pointerEvents: "none",
         }}
       >
-        {messages[chain[chain.length]?.index]}
+        {messages[chain[chain.length - 1]?.index]}
       </span>
       <style>{`
         .chain-marquee {
