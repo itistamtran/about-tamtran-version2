@@ -8,6 +8,7 @@ import './styles/global.css';
 
 import TopBar from "./components/topbar";
 import SequentialMarquee from "./components/SequentialMarquee.jsx";
+import ResponsiveMarquee from "./components/ResponsiveMarquee.jsx";
 import Footer from "./components/footer";
 import FeatureCard from "./components/FeatureCard";
 import Testimonials from "./components/Testimonials";
@@ -238,7 +239,7 @@ function App() {
             </div>        
 
             {/* Pink rectangle below grid */}
-            <SequentialMarquee />
+            <ResponsiveMarquee />
 
             {/* About Me section: one side image, one side text */}
             <div style={{
