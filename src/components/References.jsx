@@ -7,7 +7,7 @@ const References = () => {
     <div className="p-4">
       <Grid container spacing={4} className="pt-8">
         {/* Title */}
-        <Typography variant="body1" gutterBottom component="div" style={{ fontSize: '1.8rem', marginBottom: '0px', textAlign: 'left', color: '#FFB6C1', marginLeft: '20px' }}>
+        <Typography variant="body1" gutterBottom component="div" style={{ fontSize: '1.8rem', marginBottom: '0px', textAlign: 'left', color: '#FFB6C1', marginLeft: '20px', marginBottom: '20px' }}>
             REFERENCES
         </Typography>
         {/* References Content */}

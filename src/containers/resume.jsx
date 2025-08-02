@@ -516,7 +516,9 @@ const Resume = () => {
             </Grid>
           </Grid>
           {/* References Section */}
-          <References />
+          <Grid container spacing={2} style={{ marginTop: '40px', alignItems: 'flex-start', borderTop: '1px solid #FFB6C1', }}>
+            <References />
+          </Grid>
                     
         </ThemeProvider>
       </Container>
