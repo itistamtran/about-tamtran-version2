@@ -70,10 +70,21 @@ export default function TrulyInfiniteChainMarquee() {
     }
   }, [chain, duration]);
 
-  // Reset counter when reload the component 
+  // Reset chain on visibility change
   useEffect(() => {
-    messageCounter.current = 1;
+    function handleVisibility() {
+      if (document.visibilityState === "visible") {
+        // Reset chain so only one message shows, and reset the counter
+        setChain([{ index: 0, key: Date.now() }]);
+        messageCounter.current = 1;
+      }
+    }
+    document.addEventListener("visibilitychange", handleVisibility);
+    return () => {
+      document.removeEventListener("visibilitychange", handleVisibility);
+    };
   }, []);
+
 
   return (
     <div
