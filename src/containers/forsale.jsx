@@ -63,7 +63,7 @@ export default function OnSalePage() {
                         <img 
                             src={product.imageUrl} 
                             alt={product.title} 
-                            className="object-cover w-full transition-transform duration-300 transform h-60 hover:scale-105" 
+                            className="object-contain w-full transition-transform duration-300 transform h-60 hover:scale-105" 
                             onError={(e) => e.target.src='images/placeholder.jpg'} // Fallback for broken images
                         />
                         <div className="p-4">
