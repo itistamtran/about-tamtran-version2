@@ -60,12 +60,14 @@ export default function OnSalePage() {
             <div className="grid w-full max-w-full grid-cols-1 gap-6 px-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ">
                 {products.map((product) => (
                     <div key={product.id} className="overflow-hidden rounded-lg transition-transform transform hover:scale-105  bg-gray-800 light:text-white">
-                        <img 
-                            src={product.imageUrl} 
-                            alt={product.title} 
-                            className="object-contain w-full transition-transform duration-300 transform h-60 hover:scale-105" 
-                            onError={(e) => e.target.src='images/placeholder.jpg'} // Fallback for broken images
-                        />
+                        <div className="flex items-center justify-center h-60 bg-white">
+                            <img 
+                                src={product.imageUrl} 
+                                alt={product.title} 
+                                className="object-contain max-w-full max-h-full transition-transform duration-300 transform hover:scale-105" 
+                                onError={(e) => e.target.src='images/placeholder.jpg'} // Fallback for broken images
+                            />
+                        </div>
                         <div className="p-4">
                             <h2 className="text-lg font-semibold">{product.title}</h2>
                             <a href={product.link} target="_blank" rel="noopener noreferrer" className="text-[#FFB6C1] font-bold hover:underline">Buy on Shutterstock</a>
