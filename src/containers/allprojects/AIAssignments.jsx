@@ -1,4 +1,3 @@
-import React from "react";
 import { Container, Typography, Button, Grid } from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import styled from "styled-components";
