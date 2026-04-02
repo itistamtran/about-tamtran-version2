@@ -46,7 +46,7 @@ const References = () => {
                 fontSize: "1.25rem",
               }}
             >
-              Associate Professor, Department of Philosophy <br />
+              Professor, Department of Philosophy <br />
               Director, California Center for Ethics & Policy <br />
               Co-Director, Digital Humanities Consortium
             </Typography>

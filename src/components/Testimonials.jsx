@@ -5,27 +5,27 @@ const testimonials = [
     name: "Dr. Alex Madva",
     company: "Cal Poly Pomona",
     role: (
-      <> 
-        Associate Professor, Department of Philosophy <br />
+      <>
+        Professor, Department of Philosophy <br />
         Director, California Center for Ethics & Policy <br />
         Co-Director, Digital Humanities Consortium
       </>
-    ), 
+    ),
     image: "/media/dr.alex.jpg",
     text: `Tam is incredibly talented, dedicated, responsive, and responsible. She knows what we want before we do, and she has all the tools to make it happen. 
           We’ve been especially grateful for her ingenuity and resourcefulness in navigating the many constraints imposed on websites by our university. 
           I would—and do—trust her with all aspects of web design and a range of other essential digital skills. She's the best of the best.`,
-    highlighted: true, 
+    highlighted: true,
   },
   {
     name: "Dr. Scott Roby",
     company: "Cypress College",
     role: (
-      <> 
+      <>
         Professor of Mathematics <br />
         Science, Engineering and Math Division
       </>
-    ),    
+    ),
     image: "/media/dr.scott-roby.jpg",
     text: `My Calculus 2 class is focused on producing thorough and well-presented logical solutions to problems, 
           and Tam excelled at this. Tam performed exceptionally well in the class and finished the semester with one of the top grades. 
@@ -34,11 +34,13 @@ const testimonials = [
   {
     name: "Dr. Jennifer Switkes",
     company: "Cal Poly Pomona",
-    role: <> 
-      Professor of Mathematics <br />
-      Department of Mathematics and Statistics, <br /> 
-      College of Science
-      </>,
+    role: (
+      <>
+        Professor of Mathematics <br />
+        Department of Mathematics and Statistics, <br />
+        College of Science
+      </>
+    ),
     image: "/media/dr.jenny_switkes.jpg",
     text: `Tam Tran is a wonderful lifelong learner. 
           She was a student in my Mathematics of Operations Research sequence. 
@@ -65,7 +67,11 @@ const Testimonials = () => {
           >
             {/* Profile Image + Name & Role Container */}
             <div style={styles.profileContainer}>
-              <img src={testimonial.image} alt={testimonial.name} style={styles.image} />
+              <img
+                src={testimonial.image}
+                alt={testimonial.name}
+                style={styles.image}
+              />
               <div>
                 <h4 style={styles.name}>{testimonial.name}</h4>
                 <p style={styles.company}>{testimonial.company}</p>
@@ -140,7 +146,7 @@ const styles = {
   image: {
     width: "60px",
     height: "60px",
-    borderRadius: "50%", 
+    borderRadius: "50%",
     objectFit: "cover",
   },
   name: {
@@ -169,4 +175,3 @@ const styles = {
 };
 
 export default Testimonials;
-
