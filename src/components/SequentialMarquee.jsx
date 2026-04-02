@@ -8,23 +8,21 @@ export default function TrulyInfiniteChainMarquee() {
   const containerRef = useRef(null);
   const measureRef = useRef(null);
   const [duration, setDuration] = useState(15);
-  const [chain, setChain] = useState([
-    { index: 0, key: Date.now() }
-  ]);
+  const [chain, setChain] = useState([{ index: 0, key: Date.now() }]);
   const messageCounter = useRef(1); // tracks next message index
 
   const [fontSize, setFontSize] = useState("1rem");
 
   useEffect(() => {
-  function handleResize() {
-    if (window.innerWidth < 400) setFontSize("0.7rem");
-    else if (window.innerWidth < 600) setFontSize("0.8rem");
-    else setFontSize("1rem");
-  }
-  window.addEventListener("resize", handleResize);
-  handleResize();
-  return () => window.removeEventListener("resize", handleResize);
-}, []);
+    function handleResize() {
+      if (window.innerWidth < 400) setFontSize("0.7rem");
+      else if (window.innerWidth < 600) setFontSize("0.8rem");
+      else setFontSize("1rem");
+    }
+    window.addEventListener("resize", handleResize);
+    handleResize();
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   // Measure for animation duration
   useEffect(() => {
     const measure = measureRef.current;
@@ -41,16 +39,19 @@ export default function TrulyInfiniteChainMarquee() {
   // Run next message every duration/factor seconds infinity times
   useEffect(() => {
     const getFactor = () => {
-    if (window.innerWidth < 500) return 2;
-    if (window.innerWidth < 900) return 3;
-    if (window.innerWidth < 1200) return 5;
-    return 6;
-  };
+      if (window.innerWidth < 500) return 2;
+      if (window.innerWidth < 900) return 3;
+      if (window.innerWidth < 1200) return 5;
+      return 6;
+    };
     const factor = getFactor();
     const interval = setInterval(() => {
-      setChain(c => [
+      setChain((c) => [
         ...c,
-        { index: messageCounter.current % messages.length, key: Date.now() + Math.random() }
+        {
+          index: messageCounter.current % messages.length,
+          key: Date.now() + Math.random(),
+        },
       ]);
       messageCounter.current += 1;
     }, (duration / factor) * 1500);
@@ -63,7 +64,7 @@ export default function TrulyInfiniteChainMarquee() {
     if (chain.length > 0) {
       const timers = chain.map((entry, i) =>
         setTimeout(() => {
-          setChain(c => c.filter((_, idx) => idx !== i));
+          setChain((c) => c.filter((_, idx) => idx !== i));
         }, duration * 1150)
       );
       return () => timers.forEach(clearTimeout);
@@ -85,7 +86,6 @@ export default function TrulyInfiniteChainMarquee() {
     };
   }, []);
 
-
   return (
     <div
       ref={containerRef}
@@ -103,7 +103,7 @@ export default function TrulyInfiniteChainMarquee() {
         overflow: "hidden",
         display: "flex",
         alignItems: "center",
-        fontWeight: "bold",  
+        fontWeight: "bold",
       }}
     >
       {/* For measuring only */}
@@ -138,7 +138,7 @@ export default function TrulyInfiniteChainMarquee() {
           to { left: -100%; }
         }
       `}</style>
-      {chain.map(entry => (
+      {chain.map((entry) => (
         <div
           key={entry.key}
           className="chain-marquee marquee-animate"
